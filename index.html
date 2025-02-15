@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web del Museo de Lunaria</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          <a href="#">MUSEO de LUNARIA</a>
+        </div>
+        <!--  hamburguesa (visible en mobile) -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Menú  -->
+        <nav class="nav-menu">
+          <ul class="ul-nav">
+            <li><a class="active" href="/exhibitions.html">Exhibiciones</a></li>
+            <li><a class="inactive" href="/about.html">Historia</a></li>
+            <li><a class="inactive" href="/tickets.html">Entradas</a></li>
+            <li><a class="inactive" href="/contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+
+    <main class="main_home"> 
+        <h1>Te damos la Bienvenida al Museo de la ciudad de Lunaria</h1>
+        <section class="main_section">
+            <img src="./assets/img/glass-ceiling.jpg" alt="cristal techo del museo" class="background_img">
+
+            <aside class="banner"> 
+                <h2>Visitanos este fin de semana </h2>
+                <p>para disfrutar una exposición especial!</p>
+                <button class="open-popup-btn" onclick="mostrarPopup()">Más info</button>
+            </aside>
+        </section>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h2>¡No te pierdas la exposición especial este fin de semana en el Museo de Lunaria!</h2>
+                <p>Vení durante todo el fin de semana, ingresando de forma Gratuita y por orden de llegada, no hace falta reservar entradas
+                <br>
+                Te esperamos!</p>
+                <button class="close-popup-btn" onclick="cerrarPopup()">Cerrar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footerContainer">
+            <a href="."><img class="logo" src="./assets/img/lunaria.webp" alt="Logo de Lunaria con Enlace a la pagina de Inicio"></a>
+            <p>Visitanos en nuestras redes</p>
+            <ul class="ul_SocialMedia">
+                <li><a href="http://www.facebook.com/123"><img src="./assets/img/facebook.png" alt="icono facebook"></a></li>
+                <li><a href="http://www.x.com/123"><img src="./assets/img/x.png" alt="icono x"></a></li>
+                <li><a href="http://www.instagram.com/123"><img src="./assets/img/instagram.png" alt="icono instagram"></a></li>
+                <li><a href="http://www.whatsapp.com/123"><img src="./assets/img/whatsapp.png" alt="icono whatsapp"></a></li>
+            </ul>
+
+           
+<!-- poner body con flex asi header main y footer son flex
+poner a main una altura y luego flex grow 1 y 
+hace que el footer se vaya para abajo-->
+    </footer>
+
+<!--CODIGO DE FORMULARIO BASICO
+<form class="loginBox" action="" method="">
+    <ul>
+        <li>
+            <label for="name">Nombre</label>
+            <input type="text">
+        </li>
+        <li>
+            <label for="mail">Email</label>
+            <input type="text">
+        </li>
+        <li>
+            <label for="msg">Mensaje:</label>
+            <textarea id="msg" name="user_message">Mensaje</textarea>
+            <input type="text" value="por defecto este elemento se llena con este texto" />
+          </li>
+        <li class="FormSubmit">
+            <button type="submit">Enviar</button>
+        </li>
+    </ul>
+</form> -->
+
+<script>
+        function mostrarPopup() {
+            document.getElementById('popup').style.display = 'flex'; //<!-- 'block' o 'flex' -->
+        }
+
+        function cerrarPopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+    <script> <!-- esto es para el menu hamburgues-->
+        function toggleMenu() {
+          const navMenu = document.querySelector('.nav-menu');
+          navMenu.classList.toggle('active');
+        }
+      </script>
+      
+</body>
+</html>

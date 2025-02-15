@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto con el Museo de Lunaria</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          <a href="/index.html">MUSEO de LUNARIA</a>
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="nav-menu">
+          <ul class="ul-nav">
+            <li><a class="inactive" href="./exhibitions.html">Exhibiciones</a></li>
+            <li><a class="inactive" href="./about.html">Historia</a></li>
+            <li><a class="inactive" href="./tickets.html">Entradas</a></li>
+            <li><a class="active" href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <section>
+        <h1>Completa el Formulario de contacto</h1>
+        <div class="contactFormContainer">
+            <div class="contactFormBackground"></div> 
+            
+            <div class="contactFormContent"> 
+                <form action="">
+                    <p>Selector tema (Consulta/Sugerencia, Cambio, Devolución)</p>
+                    <p>E-mail</p>
+                    <p>Nombre</p>
+                    <p>Mensaje</p>
+                    <p>Boton enviar mensaje</p>
+                </form>
+            </div>
+        </div>
+
+        </section>
+        <section>
+            <div>
+                <h1>Contactanos</h1>
+                <p><strong> Horario de Visitas:</strong></p>
+                <p>El museo se encuentra abierto de martes a sábados de 10 am a 6pm, </p>
+                <p>excepto en feriados nacionales.</p>
+                <br>
+                <p><strong>Dirección:</strong> Calle Buenaventura 123, Lunaria. </p>
+                <p><strong>Teléfono:</strong> + 123456789</p>
+                <p>	<strong>E-mail:</strong> museo@lunaria.com</p>
+            </div>
+            <div>
+                <p>link al mapa</p>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footerContainer">
+        <a href="/index.html"><img class="logo" src="../assets/img/lunaria.webp" alt="Logo de Lunaria con Enlace a la pagina de Inicio"></a>
+        <p>Visitanos en nuestras redes</p>
+        <ul class="ul_SocialMedia">
+            <li><a href="http://www.facebook.com/123"><img src="../assets/img/facebook.png" alt="icono facebook"></a></li>
+            <li><a href="http://www.x.com/123"><img src="../assets/img/x.png" alt="icono x"></a></li>
+            <li><a href="http://www.instagram.com/123"><img src="../assets/img/instagram.png" alt="icono instagram"></a></li>
+            <li><a href="http://www.whatsapp.com/123"><img src="../assets/img/whatsapp.png" alt="icono whatsapp"></a></li>
+        </ul>
+</footer>
+<script> <!-- esto es para el menu hamburgues-->
+    function toggleMenu() {
+      const navMenu = document.querySelector('.nav-menu');
+      navMenu.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>

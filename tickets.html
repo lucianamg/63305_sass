@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Entradas para el Museo de Lunaria</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+      <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="/index.html">MUSEO de LUNARIA</a>
+      </div>
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav-menu">
+        <ul class="ul-nav">
+          <li><a class="inactive" href="./exhibitions.html">Exhibiciones</a></li>
+          <li><a class="inactive" href="./about.html">Historia</a></li>
+          <li><a class="active" href="./tickets.html">Entradas</a></li>
+          <li><a class="inactive" href="./contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section><!-- Section Info -->
+        <p>VISITAS: El museo se encuentra abierto de martes a sábados de 10 am a 6pm, </p>
+        <p>excepto en feriados nacionales.</p>
+      </section>
+      <section><!-- Section Ticket price table -->
+        <h2>
+            Precios de las entradas:
+        </h2>
+        <table><!--------------------------- Ver como hacer una tabla-->
+            General-------------------------------------- $10 <br>
+            Menores de 8 años------------------------- $3<br>
+            Estudiantes---------------------------------- $5<br>
+            Menores de 3 y Mayores de 65----------- Gratis<br>
+            Visitas Guiadas (precio por persona)-----$15
+        </table>
+      </section>
+      <section><!-- Section BuyTickets Form-->
+        <h2>Formulario de compra</h2>
+        
+        <div class="container mt-4">
+
+        <form id="formCompra">
+<!-- PROBAR MINLENGHT EN EL CAMPO MAIL COMO UN ATRIBUTO MINLENGHT = "1"-->
+          <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Para que recibas la confirmación">
+          </div>
+          
+          <div class="mb-3">
+            <div class="d-flex w-100">
+              <div style="width:70%; margin-right:0.5rem;">
+              <label for="inputType" class="form-label">Tipo de Entradas</label>
+              <select id="inputType" class="form-select">
+                <option selected>General</option>
+                <option>Menores de 8</option>
+                <option>Estudiantes</option>
+                <option>Menores de 3 y mayores de 65</option>
+                <option>Visitas Guiadas</option>
+              </select>
+            </div>
+
+            <div style="width:30%;">
+              <label for="inputAmount" class="form-label">Cantidad de Entradas</label>
+              <select id="inputAmount" class="form-select">
+                <option selected>1</option><option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>9</option>
+              </select>
+            </div>
+          </div>
+        </div>
+          <div class="mb-3">
+            <button type="submit" class="btn btn-success">Confirmar la Compra</button>
+          </div>
+
+        </div>
+        <div id="alertConfirmacion" class="alert alert-success alert-dismissible fade show d-none" role="alert">
+          Gracias por tu compra.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        </form>
+          
+          
+
+
+
+
+
+
+
+          <p>Después de llenar el formulario aparece mensaje  "Gracias por tu compra. Recibirás un correo con los detalles".</p>
+          
+      </section>
+      <section><!-- Section Info -->
+          <p>Cambios: hasta 24 hs antes de la fecha programada, consulte por teléfono.</p>
+          <p>Devoluciones: devolución total hasta 48 hs antes de la fecha programada, Complete el Formulario de dovolución.</p><!-- Link a un Form devolucion-->
+      </section>
+
+
+    </main>
+    <footer class="footerContainer">
+      <a href="/index.html"><img class="logo" src="../assets/img/lunaria.webp" alt="Logo de Lunaria con Enlace a la pagina de Inicio"></a>
+      <p>Visitanos en nuestras redes</p>
+      <ul class="ul_SocialMedia">
+          <li><a href="http://www.facebook.com/123"><img src="../assets/img/facebook.png" alt="icono facebook"></a></li>
+          <li><a href="http://www.x.com/123"><img src="../assets/img/x.png" alt="icono x"></a></li>
+          <li><a href="http://www.instagram.com/123"><img src="../assets/img/instagram.png" alt="icono instagram"></a></li>
+          <li><a href="http://www.whatsapp.com/123"><img src="../assets/img/whatsapp.png" alt="icono whatsapp"></a></li>
+      </ul>
+    </footer>
+    <script> <!-- esto es para el menu hamburgues-->
+        function toggleMenu() {
+          const navMenu = document.querySelector('.nav-menu');
+          navMenu.classList.toggle('active');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Cuando se envíe el formulario, se muestra la alerta
+      document.getElementById('formCompra').addEventListener('submit', function(e) {
+        e.preventDefault(); 
+        document.getElementById('alertConfirmacion').classList.remove('d-none');
+      });
+    </script>
+  </body>
+
+</html>

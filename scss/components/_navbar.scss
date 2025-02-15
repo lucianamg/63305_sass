@@ -1,0 +1,30 @@
+
+.logo a{
+    text-decoration: none;
+    padding-left: .1875rem;
+    color:#294379;
+    font-family: "League Spartan", serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.ul-nav {
+    display: flex;
+}
+.ul-nav li{
+    list-style: none;
+    padding-left: .3rem;
+    padding-right: .3rem;
+}
+.ul-nav li a{
+    text-decoration: none;
+    font-family: "League Spartan", serif;
+    font-weight: 120;
+    font-size: 1.6rem;
+}
+.active{
+    color: #000000;
+}
+.inactive{
+    color:#8c8c8e;
+}

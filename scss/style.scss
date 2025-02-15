@@ -1,0 +1,43 @@
+@import "./base/typography"; /* va primero porque unas vbles usan tipo*/
+
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+@import "./base/reset";
+
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/main_about";
+@import "./layout/main_contact";
+@import "./layout/main_exhibitions";
+@import "./layout/main_index";
+@import "./layout/main_tickets";
+
+
+@import "./components/boostrap";
+@import "./components/buttons";
+@import "./components/hambmenu";
+@import "./components/navbar";
+
+@import "./layout/mediaq/mediamb";
+@import "./layout/mediaq/mediatb";
+@import "./layout/mediaq/mediawb";
+/* primero partials de utilities
+vbles maps mixings
+luego base
+layout
+componentes
+media querys
+
+@import "";
+@import "";
+@import "";
+@import "";
+@import "";
+@import "";
+@import "";
+@import "";
+@import "";
+*/
+/**/

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibiciones del Museo de Lunaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          <a href="/index.html">MUSEO de LUNARIA</a>
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="nav-menu">
+          <ul class="ul-nav">
+            <li><a class="active" href="#">Exhibiciones</a></li>
+            <li><a class="inactive" href="./about.html">Historia</a></li>
+            <li><a class="inactive" href="./tickets.html">Entradas</a></li>
+            <li><a class="inactive" href="./contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <!-- antiguo header
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html">MUSEO de LUNARIA</a>
+        </div>
+        <nav>
+            <ul class="ul-nav">
+                <li><a class="active" href="#">Exhibiciones</a></li>
+                <li><a class="inactive" href="../pages/about.html">Historia</a></li>
+                <li><a class="inactive" href="../pages/tickets.html">Entradas</a></li>
+                <li><a class="inactive" href="../pages/contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <main>
+
+        <section>
+            <ul class="exhibitionsNav">
+                <li><a href="#CurrentExhibitions">Actuales</a></li>
+                <li><a href="#UpcomingExhibitions">Futuras</a></li>
+                <li><a href="#PastExhibitions">Pasadas</a></li>
+            </ul>
+        </section>
+
+        <section><!-- Section Exhibitions -->
+            <div id="CurrentExhibitions" class="currentExhibition"><!-- DIV Current -->
+                <h1 class="subheadingLine"><span>Exhibiciones Actuales</span></h1>
+                 <!--aca quiero que aparezca una linea gris horizontal a la derecha del h1 -->
+
+        
+                <div class="articlesCurrent">
+                    <article class="current1"><!-- carousel de boostrap -->
+                        <div id="carouselExhibicion" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="../assets/img/perm1.webp" class="d-block w-100" alt="Imagen 1">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="../assets/img/perm2.webp" class="d-block w-100" alt="Imagen 2">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="../assets/img/perm3.jpg" class="d-block w-100" alt="Imagen 3">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="../assets/img/perm4.png" class="d-block w-100" alt="Imagen 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/perm5.jpg" class="d-block w-100" alt="Imagen 4">
+                              </div>
+                          </div>
+                          
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExhibicion" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExhibicion" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                          </button>
+                        </div>
+                        
+                        <div>
+                          <h2>Exhibición Permanente</h2>
+                          <p>La Exhibición Permanente del Museo de Lunaria es un espacio vibrante dedicado al arte contemporáneo, distribuido en 6 salas que recogen obras exclusivas de la colección del museo. Cada sala está diseñada para ofrecer una experiencia inmersiva, conectando al visitante con las tendencias y expresiones más innovadoras del arte actual.
+                        </p>
+                            <p>Abierta durante todo el año, la exposición cuenta con servicios como audioguías, visitas guiadas y actividades interactivas, pensadas para enriquecer la experiencia cultural de públicos de todas las edades. Descubrí un recorrido sensorial y educativo donde la creatividad se vive en cada rincón, haciendo de cada visita una oportunidad para explorar y dialogar con el arte.</p>
+                        </div>
+                        <div>
+                          <button onclick="location.href='./tickets.html'">Obtener Entradas</button>
+                        </div>
+                      </article>
+                 
+
+                    <article class="current2 exhibition-layout">
+                        <div class="image_container">
+                            <img src="../assets/img/carl alva.webp" alt="">
+                        </div>
+                        <div class="info_container">
+                            <h2>Carl Alva: Assembly</h2>
+                            <p>Descripción Exhibición Carl Alva</p>
+                      
+                            <button onclick="location.href='./tickets.html'">Obtener Entradas </button>
+                        </div>
+                    </article>
+                    <article class="current3 exhibition-layout">
+                        <div class="image_container">
+                            <img src="../assets/img/marty.jpg" alt="">
+                        </div>
+                        <div class="info_container">
+                            <h2>Marty Grann: Apparitions</h2>
+                            <p>Descripción Exhibición Marty Grann</p>
+                       
+                            <button onclick="location.href='./tickets.html'">Obtener Entradas </button>
+                        </div>
+                    </article>
+                    <article class="current4 exhibition-layout">
+                        <div class="image_container">
+                            <img src="../assets/img/chaplin-interior-landscape.webp" alt="">
+                        </div>
+                        <div class="info_container">
+                            <h2>John Chaplin: Interior Landscape</h2>
+                            <p>Descripción Exhibición John Chaplin</p>
+                       
+                            <button onclick="location.href='./tickets.html'">Obtener Entradas </button>
+                        </div>
+                    </article>
+                    <article class="current5 exhibition-layout">
+                        <div class="image_container">
+                            <img src="../assets/img/green-distopia.jpg" alt="">
+                        </div>
+                        <div class="info_container">
+                            <h2>Jonas Green: Distopia</h2>
+                            <p>Descripción Exhibición Jonas Green</p>
+                       
+                            <button onclick="location.href='./tickets.html'">Obtener Entradas </button>
+                        </div>
+                    </article>
+                </div>  
+            </div>
+
+            <div id="UpcomingExhibitions" class="upcomingExhibition"><!-- DIV Upcoming -->
+                
+                <h1 class="subheadingLine"><span>Próximas Exhibiciones</span></h1>
+
+        
+                <div class="articlesUpcoming">
+                    <article class="upcoming1 exhibition-layout">
+                        <div class="image_container">
+                            <img src="../assets/img/sara.jpg" alt="">
+                        </div>
+                        <div class="info_container">
+                            <h2>Sara Prest: Shock and beauty</h2>
+                            <p>Descripción Exhibición Sara Prest</p>
+                            <button onclick="location.href='./tickets.html'">Obtener Entradas </button>
+                        </div>
+                    </article>
+                    <article class="upcoming2 exhibition-layout">
+                        <div class="image_container">
+                            <img src="../assets/img/post-human.webp" alt="">
+                        </div>
+                        <div class="info_container">
+                            <h2>Roy Alk: Post Human</h2>
+                            <p>Descripción Exhibición Roy Alk</p>
+                       
+                            <button onclick="location.href='./tickets.html'">Obtener Entradas </button>
+                        </div>
+                    </article>
+                    <article class="upcoming3 exhibition-layout">
+                        <div class="image_container">
+                            <img src="../assets/img/eleanor-personajpg.jpg" alt="">
+                        </div>
+                        <div class="info_container">
+                            <h2>Eleanor: Persona</h2>
+                            <p>Descripción Exhibición Eleanor</p>
+                       
+                            <button onclick="location.href='./tickets.html'">Obtener Entradas </button>
+                        </div>
+                    </article>
+                    <article class="upcoming4 exhibition-layout">
+                        <div class="image_container">
+                            <img src="../assets/img/karl-pup-and-flowers.webp" alt="">
+                        </div>
+                        <div class="info_container">
+                            <h2>Karl Lrak: Pup and flowers</h2>
+                            <p>Descripción Exhibición Karl Lrak</p>
+                       
+                            <button onclick="location.href='./tickets.html'">Obtener Entradas </button>
+                        </div>
+                    </article>
+                </div>  
+            </div>
+
+            <div id="PastExhibitions" class="pastExhibition"><!-- DIV Past --> <!-- hacer carrousel -->
+                
+                <h1 class="subheadingLine"><span>Exhibiciones Pasadas</span></h1>
+
+                <div class="articlesPast">
+                    <article class="past1 exhibition-layout">
+                        <div class="image_container">
+                            <img src="../assets/img/ray-anthony-deadwood.webp" alt="">
+                        </div>
+                        <div class="info_container">
+                            <h2>Ray Anthony: deadwood</h2>
+                            <p>Descripción Exhibición Ray Anthony</p>
+                        </div>
+                    </article>
+                    <article class="past2 exhibition-layout">
+                        <div class="image_container">
+                            <img src="../assets/img/roy-blind-date.jpg" alt="">
+                        </div>
+                        <div class="info_container">
+                            <h2>Roy Aguilar: Blind date</h2>
+                            <p>Descripción Exhibición Roy Aguilar</p>
+                        </div>
+                    </article>
+                    <article class="past3 exhibition-layout">
+                        <div class="image_container">
+                            <img src="../assets/img/vanessa-_oil-on-canvas.webp" alt="">
+                        </div>
+                        <div class="info_container">
+                            <h2>Vanessa Ulrigh: oil on canvas</h2>
+                            <p>Descripción Exhibición Vanessa Ulrigh</p>
+                        </div>
+                    </article>
+                </div>  
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footerContainer">
+        <a href="/index.html"><img class="logo" src="../assets/img/lunaria.webp" alt="Logo de Lunaria con Enlace a la pagina de Inicio"></a>
+        <p>Visitanos en nuestras redes</p>
+        <ul class="ul_SocialMedia">
+            <li><a href="http://www.facebook.com/123"><img src="../assets/img/facebook.png" alt="icono facebook"></a></li>
+            <li><a href="http://www.x.com/123"><img src="../assets/img/x.png" alt="icono x"></a></li>
+            <li><a href="http://www.instagram.com/123"><img src="../assets/img/instagram.png" alt="icono instagram"></a></li>
+            <li><a href="http://www.whatsapp.com/123"><img src="../assets/img/whatsapp.png" alt="icono whatsapp"></a></li>
+        </ul>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script> <!-- esto es para el menu hamburgues-->
+    function toggleMenu() {
+      const navMenu = document.querySelector('.nav-menu');
+      navMenu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
