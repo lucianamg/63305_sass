@@ -1,0 +1,201 @@
+.exhibitionsNav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 1.25rem;
+    position: sticky;
+}
+.exhibitionsNav li{
+    list-style: none;
+    padding-left: .3rem;
+    padding-right: .3rem;
+}
+.exhibitionsNav li a{
+    text-decoration: none;
+    color:#294379;
+    font-family: "League Spartan", serif;
+    font-weight: 100;
+    font-size: 1.6rem;
+}
+.carousel-item{
+    height: 35rem;
+}
+.carousel-item img{
+
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Muestra la imagen completa sin recortar */
+        object-position: center; /* Centra la imagen dentro del contenedor */
+
+}
+
+.exhibition-layout {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .exhibition-layout .image-container {
+    flex-shrink: 0;
+  }
+  
+  /* El contenedor de INFO ocupa el resto */
+  .exhibition-layout .info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* VER ajustaR el botón  */
+  .exhibition-layout  {
+    align-self: flex-start;
+    margin-top: 1rem;
+  }
+
+
+.subheadingLine{
+  font-weight: 100;
+  color:#2f3645;
+}
+
+.current1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2.25rem;
+}
+.articlesCurrent{
+    margin: 2.25rem;
+
+    
+    /* 
+    font-family: $dmsans;
+    font-family: $spartan;
+  $font-sizes:(
+   h1-320: 0.7rem,
+    h1-500: 1rem,
+    h1-700: 1.2rem,
+    h1-910: 1.8rem,
+    h1-1230: 2rem,
+    h1-1440: 2.5rem,
+
+
+    p-small: 1rem,
+    p-medium: 1.4rem,
+    p-large: 1.875rem,
+    h1-small: 1rem,
+    h1-medium: 1.4rem,
+    h1-large: 1.875rem,
+    h2-small: 1rem,
+    h2-medium: 1.4rem,
+    h2-large: 1.875rem,
+    h6-small: 1.25rem,
+    h6-medium: 1.25rem,
+    h6-large: 1.875rem,
+
+    nav-small: 1.25rem,
+    nav-medium: 1.25rem,
+    nav-large: 2.5rem
+    */
+}
+.info_container {
+    margin: 10px;
+}
+.info_container p{
+    font-family: $dmsans;
+    font-weight: 300;
+    text-align:justify;
+    color:map-get($colors, gris);
+    font-size: map-get($font-sizes, p-1440);
+}
+.info_container h2{
+    font-family: $spartan;
+    font-weight: 100;
+    color:black;
+    font-size: map-get($font-sizes, h2-1440);
+}
+.info_container h6{
+    font-family: $dmsans;
+    font-weight: 500;
+    color:map-get($colors, azul);
+    font-size: map-get($font-sizes, h6-1440);
+}
+.subheadingLine {
+    display: flex;
+    align-items: center;
+  }
+  
+  .subheadingLine span {
+    margin-right: 8px;  /* espacio entre el texto y la línea */
+  }
+  
+  .subheadingLine::after {
+    content: "";
+    flex: 1;            
+    border-top: 1px solid #eee;
+    margin-left: 8px;
+  }
+  .current2{
+    margin: 3rem;
+
+  }
+  .current2 img{
+    width: 35rem;
+  }
+  .current3{
+    margin: 3rem;
+  }
+  .current3 img{
+    width: 35rem;
+  }
+  .current4{
+    margin: 3rem;
+  }
+  .current4 img{
+    width: 35rem;
+  }
+  .current5{
+    margin: 3rem;
+  }
+  .current5 img{
+    width: 35rem;
+  }
+  .articlesUpcoming article div img{
+    width: 35rem;
+  }
+  .PastExhibitions img{
+    width: 35rem;
+
+  }
+  .articlesUpcoming article{
+    display:flex;
+    margin: 3rem;
+  }
+  .articlesUpcoming{
+    margin: 3rem;
+  }
+  .articlesPast{
+    margin: 3rem;
+  }
+  .past1 img{
+    width: 35rem;
+  }
+  .past2 img{
+    width: 35rem;
+  }
+  .past3 img{
+    width: 35rem;
+  }
+  .past1{
+    margin: 3rem;
+  }  
+  .past2{
+    margin: 3rem;
+  }
+  .past3{
+    margin: 3rem;
+  }

@@ -21,6 +21,15 @@ gris lineas ebebeb
   font-style: normal;
 } */
 /* va primero porque unas vbles usan tipo*/
+.borrar {
+  font-family: "DM Sans", serif;
+  font-weight: 300;
+  color: #294379;
+  font-family: "League Spartan", serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -49,6 +58,7 @@ ul {
 .footerContainer a {
   width: 10%;
   padding-top: 2px;
+  text-decoration: none;
 }
 
 .footerContainer a img {
@@ -74,11 +84,6 @@ ul {
 }
 
 header {
-  background-color: blue; /* variables*/
-  color: rgb(176, 176, 209); /* mapas*/
-}
-
-.header {
   border-bottom: 1px solid #ebebeb;
   display: flex;
   align-items: center;
@@ -292,6 +297,259 @@ header {
   align-self: center;
 }
 
+.contactFormContainer {
+  position: relative;
+  padding: 20px;
+  /*border-radius: 8px; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 40vh;
+  overflow: hidden; /* Asegura que el fondo no sobresalga */
+}
+
+.contactFormBackground {
+  position: absolute; /* absolute, fixed, relative */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/dome.jpg");
+  background-size: cover; /* cover, contain, 80% auto, 500px 300px, auto */
+  background-repeat: no-repeat;
+  background-position: top left; /* center, top, bottom, left, right, top left, etc */
+  opacity: 0.3;
+  z-index: 0; /* Envío el fondo detrás */
+}
+
+.contactFormContent {
+  position: relative;
+  z-index: 1; /* para que el texto quede encima */
+  color: #000;
+}
+
+.exhibitionsNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1.25rem;
+  position: sticky;
+}
+
+.exhibitionsNav li {
+  list-style: none;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+.exhibitionsNav li a {
+  text-decoration: none;
+  color: #294379;
+  font-family: "League Spartan", serif;
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+
+.carousel-item {
+  height: 35rem;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Muestra la imagen completa sin recortar */
+  object-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+.exhibition-layout {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.exhibition-layout .image-container {
+  flex-shrink: 0;
+}
+
+/* El contenedor de INFO ocupa el resto */
+.exhibition-layout .info-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* VER ajustaR el botón  */
+.exhibition-layout {
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
+.subheadingLine {
+  font-weight: 100;
+  color: #2f3645;
+}
+
+.current1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2.25rem;
+}
+
+.articlesCurrent {
+  margin: 2.25rem;
+  /* 
+    font-family: $dmsans;
+    font-family: $spartan;
+  $font-sizes:(
+   h1-320: 0.7rem,
+    h1-500: 1rem,
+    h1-700: 1.2rem,
+    h1-910: 1.8rem,
+    h1-1230: 2rem,
+    h1-1440: 2.5rem,
+
+
+    p-small: 1rem,
+    p-medium: 1.4rem,
+    p-large: 1.875rem,
+    h1-small: 1rem,
+    h1-medium: 1.4rem,
+    h1-large: 1.875rem,
+    h2-small: 1rem,
+    h2-medium: 1.4rem,
+    h2-large: 1.875rem,
+    h6-small: 1.25rem,
+    h6-medium: 1.25rem,
+    h6-large: 1.875rem,
+
+    nav-small: 1.25rem,
+    nav-medium: 1.25rem,
+    nav-large: 2.5rem
+    */
+}
+
+.info_container {
+  margin: 10px;
+}
+
+.info_container p {
+  font-family: "DM Sans", serif;
+  font-weight: 300;
+  text-align: justify;
+  color: #2f3645;
+  font-size: 1.6rem;
+}
+
+.info_container h2 {
+  font-family: "League Spartan", serif;
+  font-weight: 100;
+  color: black;
+  font-size: 2.3rem;
+}
+
+.info_container h6 {
+  font-family: "DM Sans", serif;
+  font-weight: 500;
+  color: #294379;
+  font-size: 1.6rem;
+}
+
+.subheadingLine {
+  display: flex;
+  align-items: center;
+}
+
+.subheadingLine span {
+  margin-right: 8px; /* espacio entre el texto y la línea */
+}
+
+.subheadingLine::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #eee;
+  margin-left: 8px;
+}
+
+.current2 {
+  margin: 3rem;
+}
+
+.current2 img {
+  width: 35rem;
+}
+
+.current3 {
+  margin: 3rem;
+}
+
+.current3 img {
+  width: 35rem;
+}
+
+.current4 {
+  margin: 3rem;
+}
+
+.current4 img {
+  width: 35rem;
+}
+
+.current5 {
+  margin: 3rem;
+}
+
+.current5 img {
+  width: 35rem;
+}
+
+.articlesUpcoming article div img {
+  width: 35rem;
+}
+
+.PastExhibitions img {
+  width: 35rem;
+}
+
+.articlesUpcoming article {
+  display: flex;
+  margin: 3rem;
+}
+
+.articlesUpcoming {
+  margin: 3rem;
+}
+
+.articlesPast {
+  margin: 3rem;
+}
+
+.past1 img {
+  width: 35rem;
+}
+
+.past2 img {
+  width: 35rem;
+}
+
+.past3 img {
+  width: 35rem;
+}
+
+.past1 {
+  margin: 3rem;
+}
+
+.past2 {
+  margin: 3rem;
+}
+
+.past3 {
+  margin: 3rem;
+}
+
 /*------------------------Index */
 .background_img {
   opacity: 0.6;
@@ -421,6 +679,52 @@ header {
   background-color: rgb(194, 100, 100);
 }
 
+.col-70 {
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+
+.col-30 {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+/* VER ajustaR el botón  */
+.exhibition-layout {
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
+.current1 button { /* esto lo puedo sacar todo, no estaba originalmente  */
+  align-self: center;
+  margin-top: 1rem;
+}
+
+/* 
+  .getTicketsButton button{
+    background-color: map-get($colors,grisClaro);
+    padding: .3125rem;
+    border-radius: 3px;
+    border: 1px solid rgb(80, 80, 80);
+    color: map-get($colors,azul);
+    font-family: $spartan;
+    font-weight: 300;
+    text-align: center;
+}
+*/
+.getTicketsButton {
+  background-color: rgb(245, 245, 245);
+  padding: 0.3125rem;
+  border-radius: 3px;
+  border: 1px solid rgb(80, 80, 80);
+  color: #294379;
+  font-family: "League Spartan", serif;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* botón hamburguesa */
 .hamburger-menu {
   display: none; /* Oculto en vista web */
@@ -482,6 +786,304 @@ header {
   color: #8c8c8e;
 }
 
+/* Media  320px */
+@media (max-width: 320px) {
+  /* Header */
+  .header {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .logo a {
+    font-size: 1.8rem;
+    padding: 0.5rem;
+  }
+  .ul-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  .ul-nav li a {
+    font-size: 1.2rem;
+  }
+  /* Main Home */
+  .main_home h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .banner {
+    width: 95%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+  }
+  .popup-content {
+    width: 95%;
+    padding: 0.5rem;
+    height: auto;
+  }
+  /* Carrusel y galerías */
+  .carousel-item {
+    height: 15rem;
+  }
+  .current2 img,
+  .current3 img,
+  .articlesUpcoming article div img,
+  .PastExhibitions img {
+    width: 100%;
+    height: auto;
+  } /* cambiar a este formato que es mas facil */
+  /* Footer */
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  .footerContainer a img {
+    width: 50%;
+  }
+  .footerContainer p {
+    font-size: 1.2rem;
+  }
+  .ul_SocialMedia a img {
+    width: 40%;
+  }
+}
+/* botón hamburguesa */
+.hamburger-menu {
+  display: none; /* Oculto en vista web */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 10; /* Por encima  */
+}
+
+.hamburger-menu span {
+  background: #294379;
+  height: 3px;
+  border-radius: 3px;
+}
+
+/* Mobile: ver si mostrar el botón y ocultar el menú por defecto */
+@media (max-width: 500px) {
+  .hamburger-menu {
+    display: flex;
+  }
+  /* Ocultar menú por defecto */
+  .nav-menu {
+    display: none;
+  }
+  .nav-menu.active { /* que cuando se active, mostrar el menú */
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #fff; /* Retocar */
+  }
+  /* lista de navegación */
+  .ul-nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  .ul-nav li {
+    padding: 0.5rem 0;
+  }
+}
+/* Media query  máximo de 744px */
+@media (max-width: 744px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .logo a {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  .ul-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0.5rem 0;
+  }
+  .ul-nav li a {
+    font-size: 1.4rem;
+  }
+  /* Main Home (index) */
+  .main_home h1 {
+    font-size: 1.8rem;
+    padding: 2rem;
+  }
+  .banner {
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  .popup-content {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+  }
+  /* Carrusel y galerías de Exhibitions */
+  .carousel-item {
+    height: 20rem;
+  }
+  .current2 img,
+  .current3 img,
+  .articlesUpcoming article div img,
+  .PastExhibitions img {
+    width: 100%;
+    height: auto;
+  }
+  /* Footer columna */
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .footerContainer a,
+  .footerContainer p,
+  .ul_SocialMedia {
+    width: 100%;
+  }
+  .footerContainer a img {
+    width: 60%;
+  }
+  .ul_SocialMedia {
+    justify-content: center;
+  }
+}
+@media (min-width: 1102px) and (max-width: 1230px) {
+  .info_container p {
+    font-family: "DM Sans", serif;
+    font-weight: 300;
+    text-align: justify;
+    color: #2f3645;
+    font-size: 1.4rem;
+  }
+  .info_container h2 {
+    font-family: "League Spartan", serif;
+    font-weight: 100;
+    color: black;
+    font-size: 2rem;
+  }
+  .info_container h6 {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    color: #294379;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 910px) and (max-width: 1101px) {
+  .info_container p {
+    font-family: "DM Sans", serif;
+    font-weight: 300;
+    text-align: justify;
+    color: #2f3645;
+    font-size: 1.2rem;
+  }
+  .info_container h2 {
+    font-family: "League Spartan", serif;
+    font-weight: 100;
+    color: black;
+    font-size: 1.7rem;
+  }
+  .info_container h6 {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    color: #294379;
+    font-size: 1.3rem;
+  }
+  .current2 img {
+    width: 22.5rem;
+  }
+  .current3 img {
+    width: 22.5rem;
+  }
+  .current4 img {
+    width: 22.5rem;
+  }
+  .current5 img {
+    width: 22.5rem;
+  }
+  .articlesUpcoming article div img {
+    width: 25rem;
+  }
+  .PastExhibitions img {
+    width: 25rem;
+  }
+  .past1 img {
+    width: 25rem;
+  }
+  .past2 img {
+    width: 25rem;
+  }
+  .past3 img {
+    width: 25rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 909px) {
+  .current2 img {
+    width: 23rem;
+  }
+  .current3 img {
+    width: 23rem;
+  }
+  .current4 img {
+    width: 23rem;
+  }
+  .current5 img {
+    width: 20rem;
+  }
+  .articlesUpcoming article div img {
+    width: 25rem;
+  }
+  .PastExhibitions img {
+    width: 25rem;
+  }
+  .past1 img {
+    width: 25rem;
+  }
+  .past2 img {
+    width: 25rem;
+  }
+  .past3 img {
+    width: 25rem;
+  }
+}
+@media (min-width: 760px) and (max-width: 832px) {
+  .current2 img {
+    width: 23rem;
+  }
+  .current3 img {
+    width: 23rem;
+  }
+  .current4 img {
+    width: 23rem;
+  }
+  .current5 img {
+    width: 23rem;
+  }
+  .articlesUpcoming article div img {
+    width: 23rem;
+  }
+  .PastExhibitions img {
+    width: 23rem;
+  }
+  .past1 img {
+    width: 23rem;
+  }
+  .past2 img {
+    width: 23rem;
+  }
+  .past3 img {
+    width: 23rem;
+  }
+}
 /* primero partials de utilities
 vbles maps mixings
 luego base

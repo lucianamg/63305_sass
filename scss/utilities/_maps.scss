@@ -1,20 +1,48 @@
 $font-sizes:(
-    p-small: .75rem,
-    p-medium: 1.25rem,
-    p-large: 40px,
-    h1-small: 1rem,
-    h1-medium: 1.25rem,
-    h1-large: 2.5rem,
-    h2-small: 1.25rem,
-    h2-medium: 1.25rem,
-    h2-large: 1.25rem,
+    p-320: 0.7rem,
+    p-500: 0.9rem,
+    p-700: 1rem,
+    p-910: 1.2rem,
+    p-1230: 1.4rem,
+    p-1440: 1.6rem,
+
+
+    h1-320: 0.7rem,
+    h1-500: 1rem,
+    h1-700: 1.3rem,
+    h1-910: 1.8rem,
+    h1-1230: 2rem,
+    h1-1440: 2.5rem,
+
+
+
+    h2-320: 0.7rem,
+    h2-500: 1rem,
+    h2-700: 1.2rem,
+    h2-910: 1.7rem,
+    h2-1230: 2rem,
+    h2-1440: 2.3rem,
+
+    h6-320: 0.7rem,
+    h6-500: 0.9rem,
+    h6-700: 1.1rem,
+    h6-910: 1.3rem,
+    h6-1230: 1.5rem,
+    h6-1440: 1.6rem,
+
+
     nav-small: 1.25rem,
     nav-medium: 1.25rem,
     nav-large: 2.5rem
 
 );
 $colors:(
-    princ: rgb(176, 176, 209),
-    secundario: rgb(165, 108, 108),
-    terciario: rgb(206, 206, 145)
+    azul: #294379,
+    negro: rgb(0, 0, 0),
+    blanco: rgb(255, 255, 255),
+    gris:#2f3645,
+    popupP:#dfe69587,
+    popupHover: rgb(194, 100, 100),
+    grisClaro: rgba(245, 245, 245),
+    
 );

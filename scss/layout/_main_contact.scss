@@ -1,0 +1,26 @@
+.contactFormContainer {
+    position: relative;
+    padding: 20px;
+    /*border-radius: 8px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 40vh;
+    overflow: hidden; /* Asegura que el fondo no sobresalga */
+}
+.contactFormBackground {
+    position:absolute; /* absolute, fixed, relative */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-image: url("../assets/img/dome.jpg");
+    background-size:cover;/* cover, contain, 80% auto, 500px 300px, auto */
+    background-repeat: no-repeat;
+    background-position: top left; /* center, top, bottom, left, right, top left, etc */
+    opacity: 0.3;
+    z-index: 0; /* Envío el fondo detrás */
+}
+.contactFormContent {
+    position: relative;
+    z-index: 1; /* para que el texto quede encima */
+    color: #000;
+}
