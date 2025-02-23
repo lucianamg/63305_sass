@@ -82,8 +82,8 @@
         
         <div class="container mt-4">
 
-          <form id="formCompra">
-  <!-- PROBAR MINLENGHT EN EL CAMPO MAIL COMO UN ATRIBUTO MINLENGHT = "1"-->
+          <form id="buyForm">
+  
             <div class="mb-3">
               <label for="inputEmail" class="form-label" minlenght="3">Email</label>
               <input type="email" class="form-control" id="inputEmail" placeholder="Para que recibas la confirmación">
@@ -237,7 +237,7 @@
 
     <script>
       // Cuando se envíe el formulario, se muestra la alerta
-      document.getElementById('formCompra').addEventListener('submit', function(e) {
+      document.getElementById('buyForm').addEventListener('submit', function(e) {
         e.preventDefault(); 
         document.getElementById('alertConfirmacion').classList.remove('d-none');
       });

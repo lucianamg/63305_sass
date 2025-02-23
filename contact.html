@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <title>Contacto con el Museo de Lunaria</title>
     <link rel="stylesheet" href="./css/style.css">
 
@@ -29,22 +31,42 @@
       </header>
     <main>
         <section>
-        <h1>Completa el Formulario de contacto</h1>
-        <div class="contactFormContainer">
+          <h1>Completa el Formulario de contacto</h1>
+          <div class="contactFormContainer">
             <div class="contactFormBackground"></div> 
             
             <div class="contactFormContent"> 
-                <form action="">
-                    <p>Selector tema (Consulta/Sugerencia, Cambio, Devolución)</p>
-                    <p>E-mail</p>
-                    <p>Nombre</p>
-                    <p>Mensaje</p>
-                    <p>Boton enviar mensaje</p>
-                </form>
+              <form id="contactForm" class="contactForm">
+                
+            <!-- PROBAR MINLENGHT EN EL CAMPO MAIL COMO UN ATRIBUTO MINLENGHT = "1"-->
+                <label for="topic">Selecciona el tema</label>
+                <select id="tema" name="tema" class="formField" required>
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="consulta_sugerencia">Consulta/Sugerencia</option>
+                  <option value="cambio">Cambio</option>
+                  <option value="devolucion">Devolución</option>
+                </select>
+                <label for="email">E-mail</label>
+                <input type="email" class="formField" placeholder="Ingresa tu email para que podamos contactarte" required> 
+                <label for="name">Nombre</label>
+                <input type="text" class="formField" placeholder="Ingresa tu nombre" minlength="8" required> 
+                <label for="message">Mensaje</label>
+                <textarea class="formField" placeholder="Dejanos tu mensaje..." minlength="40" required></textarea>
+                
+                <div class="mb-3">
+                  <button type="submit" class="btn btn-success">Enviar</button>
+                </div>
+                <div id="alertConfirmacion" class="alert alert-success alert-dismissible fade show d-none" role="alert">
+                  Gracias por tu mensaje. Nos contactaremos al correo indicado.
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+              </form>
             </div>
-        </div>
+          </div>
 
         </section>
+
         <section>
             <div>
                 <h1>Contactanos</h1>
@@ -78,6 +100,17 @@
       navMenu.classList.toggle('active');
     }
   </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // formulario,  alerta
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    document.getElementById('alertConfirmacion').classList.remove('d-none');
+  });
+</script>
+
 </body>
 
 </html>
