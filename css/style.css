@@ -315,8 +315,8 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/img/dome.jpg");
-  background-size: cover; /* cover, contain, 80% auto, 500px 300px, auto */
+  background-image: url("../assets/img/modern-day_museum_exterior.webp");
+  background-size: auto; /* cover, contain, 80% auto, 500px 300px, auto */
   background-repeat: no-repeat;
   background-position: top left; /* center, top, bottom, left, right, top left, etc */
   opacity: 0.3;
