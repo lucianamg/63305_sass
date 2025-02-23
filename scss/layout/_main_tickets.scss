@@ -6,4 +6,87 @@
     flex: 0 0 30%;
     max-width: 30%;
   }
-  
+  .ticketsTitle h1{
+    font-size: 2.5rem;
+    align-items: center;
+    font-weight: 100;
+    color:#2f3645;
+    font-family: "League Spartan", serif;
+    font-size: 2.5rem;
+    justify-self: center;  /* en eje x*/
+  }
+  .BuyTicketsForm h1{
+    font-size: 2rem;
+}
+.BuyTicketsForm{
+    font-size: 1.3rem;
+    font-weight: 100;
+    color:map-get($colors,azul);
+    font-family: "League Spartan", serif;
+    margin: 2rem;
+}
+
+.ticketInfo{
+    font-size: 1.5rem;
+    font-weight: 100;
+    color:map-get($colors,azul);
+    font-family: "League Spartan", serif;
+
+    
+
+}
+
+.ticketInfo h2{
+    text-align: center;
+    color:map-get($colors,azul);
+    margin-bottom: 20px;
+
+  }
+
+.priceTable{
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: "League Spartan", serif;
+
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-collapse: collapse; 
+    border: none;
+
+}
+  th, td {
+    /*border: 1px solid #ccc;  Borde gris */
+    padding: .75rem;           /* Espaciado interno */
+    text-align: center; 
+  }
+
+  thead th {
+    background-color: map-get($colors,grisClaro);
+    color: map-get($colors,azul);
+    font-size: 1.5rem;
+    border-radius: 8px 8px 0 0;
+    font-weight: 400;
+  }
+
+  tbody tr {
+    background-color: #fffcf1;
+    transition: background-color 0.3s ease;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #fff3f0;
+  }
+
+  tbody tr:hover {
+    background-color: map-get($colors,azul);
+    color: white;
+  }
+
+  /* 
+  tbody tr:last-child td {
+    border-radius: 0 0 8px 8px;
+  }*/
