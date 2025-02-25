@@ -9,36 +9,38 @@
   .gridContainer img{
     width: 12rem;
   }
-  .borrar{
-    font-family: "DM Sans", serif;
-      font-weight: 300;
-      color:#294379;
-      font-family: "League Spartan", serif;
-      font-weight: 300;
-      font-size: 2.5rem;
-  }
   
   .sectionMainTitle {
-    font-weight: 100;
-    color:#2f3645;
-    font-family: "League Spartan", serif;
-    font-size: 2.5rem;
     grid-column: 1/6;
     grid-row: 1/2;
     justify-self: center;  /* en eje x*/
     align-self:center;
+    margin: 1.5rem;
   }
+
+  .sectionMainTitle h1{
+    font-weight: 100;
+    color:map-get($colors,azul);
+    font-family: $spartan;
+    font-size: map-get($font-sizes, h1-1440);
+
+  }
+ 
   .sectionMainDescription {
-    
+    text-align: justify;
     grid-column: 1/6;
     grid-row: 2/3;
     justify-self:right;  /* en eje x*/
     align-self:center;
-    font-family: "DM Sans", serif;
+    font-family: $dmsans;
     font-weight: 100;
-    font-size: 1.2rem;
-    
+    font-size: map-get($font-sizes,p-1440);
+    margin: 1.2rem;
   }
+  .sectionMainDescription p{
+    margin-bottom: .8rem;
+  }
+
   .line1{
     grid-column: 1/6;
     grid-row: 3/4;
@@ -54,7 +56,7 @@
     grid-row: 4/5;
     justify-self: center;  /* en eje x*/
     align-self:center;
-    font-family: "DM Sans", serif;
+    font-family: $dmsans;
     font-weight: 100;
     font-size: 1rem;
     color:#294379;
@@ -64,9 +66,14 @@
     grid-row: 5/8;
     justify-self: center;
     align-self:flex-start;
-    font-family: "DM Sans", serif;
+    font-family: $dmsans;
     font-weight: 100;
-    font-size: 1.2rem;
+    font-size: map-get($font-sizes,p-1230);
+    margin: 1.2rem;
+    text-align: justify;
+  }
+  .paragraph1 p{
+    margin-bottom: .8rem;
   }
   .img1_1{
     grid-column: 1/2;
@@ -104,7 +111,7 @@
     grid-row: 9/10;
     justify-self: center;  /* en eje x*/
     align-self:center;
-    font-family: "DM Sans", serif;
+    font-family: $dmsans;
     font-weight: 100;
     font-size: 1rem;
     color:#294379;
@@ -114,9 +121,14 @@
     grid-row: 10/13;
     justify-self: center;
     align-self:flex-start;
-    font-family: "DM Sans", serif;
+    font-family: $dmsans;
     font-weight: 100;
-    font-size: 1.2rem;
+    font-size: map-get($font-sizes,p-1230);
+    margin: 1.2rem;
+    text-align: justify;
+  }
+  .paragraph2 p{
+    margin-bottom: .8rem;
   }
   .img2_1{
     grid-column: 4/5;
@@ -165,7 +177,12 @@
     align-self:flex-start;   /* en eje y */
     font-family: "DM Sans", serif;
     font-weight: 100;
-    font-size: 1.2rem;
+    font-size: map-get($font-sizes,p-1230);
+    margin: 1.2rem;
+    text-align: justify;
+  }
+  .paragraph3 p{
+    margin-bottom: .8rem;
   }
   .img3_1{
     grid-column: 1/2;

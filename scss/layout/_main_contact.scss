@@ -41,3 +41,10 @@
   border: 1px solid #ccc;
   
 }
+h1{
+    font-weight: 100;
+    color:map-get($colors,azul);
+    font-family: $spartan;
+    font-size: map-get($font-sizes, h1-1440);
+    margin: 20px;
+  }
