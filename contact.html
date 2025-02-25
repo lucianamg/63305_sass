@@ -69,18 +69,21 @@
         </section>
 
         <section>
-            <div>
-                <h1>Contactanos</h1>
-                <p><strong> Horario de Visitas:</strong></p>
-                <p>El museo se encuentra abierto de martes a sábados de 10 am a 6pm, </p>
-                <p>excepto en feriados nacionales.</p>
-                <br>
-                <p><strong>Dirección:</strong> Calle Buenaventura 123, Lunaria. </p>
-                <p><strong>Teléfono:</strong> + 123456789</p>
-                <p>	<strong>E-mail:</strong> museo@lunaria.com</p>
+            <div class="contactInfo">
+              <h1>Contactanos</h1>
+                <div>
+                  <p><strong> Horario de Visitas:</strong></p>
+                  <p>El museo se encuentra abierto de martes a sábados de 10 am a 6pm, </p>
+                  <p>excepto en feriados nacionales.</p>
+                </div>
+                <div>
+                  <p><strong>Dirección:</strong> Calle Buenaventura 123, Lunaria. </p>
+                  <p><strong>Teléfono:</strong> + 123456789</p>
+                  <p>	<strong>E-mail:</strong> museo@lunaria.com</p>
+                </div>
             </div>
-            <div>
-                <p>link al mapa</p>
+            <div class="contactMap">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2833.418806596605!2d-64.29698489776096!3d-31.142017080449442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1740509682502!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
             </div>
         </section>
 
@@ -111,7 +114,17 @@
     document.getElementById('alertConfirmacion').classList.remove('d-none');
   });
 </script>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const temaSeleccionado = urlParams.get('tema'); 
+  const selectElement = document.getElementById('tema');
 
+  if (temaSeleccionado && selectElement) {
+    selectElement.value = temaSeleccionado; 
+  }
+});
+</script>
 </body>
 
 </html>

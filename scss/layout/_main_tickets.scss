@@ -7,47 +7,54 @@
     max-width: 30%;
   }
   .ticketsTitle h1{
-    font-size: 2.5rem;
+    margin: 2.3rem;
     align-items: center;
     font-weight: 100;
-    color:#2f3645;
-    font-family: "League Spartan", serif;
-    font-size: 2.5rem;
+    font-family: $spartan;
     justify-self: center;  /* en eje x*/
+    font-size: map-get($font-sizes,h1-1440);
+    color:map-get($colors,azul);
   }
-  .BuyTicketsForm h1{
-    font-size: 2rem;
+  .ticketsTitle p{
+    margin: 2rem;
+    color:  map-get($colors,gris);
+    font-family: $dmsans;
+    font-size: map-get($font-sizes, p-1440);
+    justify-self: center;
+  }
+.BuyTicketsForm h2{
+    font-size: map-get($font-sizes,h2-1440);
+    font-weight: 500;
+    color:map-get($colors,azul);
+    font-family: $spartan;
 }
 .BuyTicketsForm{
     font-size: 1.3rem;
     font-weight: 100;
     color:map-get($colors,azul);
-    font-family: "League Spartan", serif;
-    margin: 2rem;
+    font-family: $spartan;
+    margin: 4rem 0rem 4rem 2rem;
 }
-
 .ticketInfo{
     font-size: 1.5rem;
     font-weight: 100;
     color:map-get($colors,azul);
-    font-family: "League Spartan", serif;
-
-    
-
+    font-family: $spartan;
 }
 
 .ticketInfo h2{
     text-align: center;
     color:map-get($colors,azul);
-    margin-bottom: 20px;
+    margin-top: 4rem;;
+    margin-bottom: 1.6rem;
 
   }
 
 .priceTable{
     font-size: 1.5rem;
     font-weight: 100;
-    font-family: "League Spartan", serif;
-
+    font-family: $spartan;
+    color:  map-get($colors,marron);
     max-width: 50rem;
     margin: 0 auto;
     padding: 20px;
@@ -78,15 +85,29 @@
   }
 
   tbody tr:nth-child(even) {
-    background-color: #fff3f0;
+    background-color: map-get($colors,marronClaro);
   }
 
   tbody tr:hover {
     background-color: map-get($colors,azul);
-    color: white;
+    color:  map-get($colors,blanco);
+    
   }
 
   /* 
   tbody tr:last-child td {
     border-radius: 0 0 8px 8px;
   }*/
+
+  .ticketsMoreInfo p{
+    color:  map-get($colors,gris);
+    margin: 2rem;
+    font-family: $dmsans;
+    font-size: map-get($font-sizes, p-1440);
+  }
+  .linkFormRefund{
+    color:  map-get($colors,popupHover);
+  }
+  .linkFormRefund:hover{
+    color:  map-get($colors,gris);
+  }

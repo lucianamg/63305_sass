@@ -23,7 +23,6 @@
     color:map-get($colors,azul);
     font-family: $spartan;
     font-size: map-get($font-sizes, h1-1440);
-
   }
  
   .sectionMainDescription {
@@ -39,6 +38,10 @@
   }
   .sectionMainDescription p{
     margin-bottom: .8rem;
+    font-family: $dmsans;
+    font-weight: 300;
+    font-size: map-get($font-sizes,p-1440);
+    color:map-get($colors,gris);
   }
 
   .line1{
@@ -74,6 +77,10 @@
   }
   .paragraph1 p{
     margin-bottom: .8rem;
+    font-family: $dmsans;
+    font-weight: 300;
+    font-size: map-get($font-sizes,p-1440);
+    color:map-get($colors,gris);
   }
   .img1_1{
     grid-column: 1/2;
@@ -129,6 +136,10 @@
   }
   .paragraph2 p{
     margin-bottom: .8rem;
+    font-family: $dmsans;
+    font-weight: 300;
+    font-size: map-get($font-sizes,p-1440);
+    color:map-get($colors,gris);
   }
   .img2_1{
     grid-column: 4/5;
@@ -163,11 +174,12 @@
     grid-row: 14/15;
     justify-self: center;  /* en eje x*/
     align-self:center; /*  en eje y */
-    font-family: "DM Sans", serif;
+    font-family: $dmsans;
     font-weight: 100;
     font-size: 1rem;
     color:#294379;
   }
+
   .paragraph3{
     grid-column: 3/6;
     grid-row: 15/18;
@@ -175,14 +187,15 @@
     /*align-items:center; nada y */
     /*align-content:start; en eje y */
     align-self:flex-start;   /* en eje y */
-    font-family: "DM Sans", serif;
-    font-weight: 100;
-    font-size: map-get($font-sizes,p-1230);
     margin: 1.2rem;
     text-align: justify;
   }
   .paragraph3 p{
     margin-bottom: .8rem;
+    font-family: $dmsans;
+    font-weight: 300;
+    font-size: map-get($font-sizes,p-1440);
+    color:map-get($colors,gris);
   }
   .img3_1{
     grid-column: 1/2;

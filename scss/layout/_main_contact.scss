@@ -46,5 +46,17 @@ h1{
     color:map-get($colors,azul);
     font-family: $spartan;
     font-size: map-get($font-sizes, h1-1440);
-    margin: 20px;
+    margin: 2.3rem;
+    align-items: center;
+    justify-self: center;  /* en eje x*/
+
   }
+.contactInfo p{
+    font-family: $dmsans;
+    font-weight: 300;
+    font-size: map-get($font-sizes,p-1440);
+    color:map-get($colors,gris);
+}
+.contactInfo div{
+    margin: 2.3rem;
+}

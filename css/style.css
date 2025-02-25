@@ -143,6 +143,10 @@ header {
 
 .sectionMainDescription p {
   margin-bottom: 0.8rem;
+  font-family: "DM Sans", serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #2f3645;
 }
 
 .line1 {
@@ -182,6 +186,10 @@ header {
 
 .paragraph1 p {
   margin-bottom: 0.8rem;
+  font-family: "DM Sans", serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #2f3645;
 }
 
 .img1_1 {
@@ -242,6 +250,10 @@ header {
 
 .paragraph2 p {
   margin-bottom: 0.8rem;
+  font-family: "DM Sans", serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #2f3645;
 }
 
 .img2_1 {
@@ -295,15 +307,16 @@ header {
   /*align-items:center; nada y */
   /*align-content:start; en eje y */
   align-self: flex-start; /* en eje y */
-  font-family: "DM Sans", serif;
-  font-weight: 100;
-  font-size: 1.4rem;
   margin: 1.2rem;
   text-align: justify;
 }
 
 .paragraph3 p {
   margin-bottom: 0.8rem;
+  font-family: "DM Sans", serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #2f3645;
 }
 
 .img3_1 {
@@ -379,7 +392,20 @@ h1 {
   color: #294379;
   font-family: "League Spartan", serif;
   font-size: 2.5rem;
-  margin: 20px;
+  margin: 2.3rem;
+  align-items: center;
+  justify-self: center; /* en eje x*/
+}
+
+.contactInfo p {
+  font-family: "DM Sans", serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #2f3645;
+}
+
+.contactInfo div {
+  margin: 2.3rem;
 }
 
 .exhibitionsNav {
@@ -737,17 +763,28 @@ h1 {
 }
 
 .ticketsTitle h1 {
-  font-size: 2.5rem;
+  margin: 2.3rem;
   align-items: center;
   font-weight: 100;
-  color: #2f3645;
   font-family: "League Spartan", serif;
-  font-size: 2.5rem;
   justify-self: center; /* en eje x*/
+  font-size: 2.5rem;
+  color: #294379;
 }
 
-.BuyTicketsForm h1 {
-  font-size: 2rem;
+.ticketsTitle p {
+  margin: 2rem;
+  color: #2f3645;
+  font-family: "DM Sans", serif;
+  font-size: 1.5rem;
+  justify-self: center;
+}
+
+.BuyTicketsForm h2 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: #294379;
+  font-family: "League Spartan", serif;
 }
 
 .BuyTicketsForm {
@@ -755,7 +792,7 @@ h1 {
   font-weight: 100;
   color: #294379;
   font-family: "League Spartan", serif;
-  margin: 2rem;
+  margin: 4rem 0rem 4rem 2rem;
 }
 
 .ticketInfo {
@@ -768,13 +805,15 @@ h1 {
 .ticketInfo h2 {
   text-align: center;
   color: #294379;
-  margin-bottom: 20px;
+  margin-top: 4rem;
+  margin-bottom: 1.6rem;
 }
 
 .priceTable {
   font-size: 1.5rem;
   font-weight: 100;
   font-family: "League Spartan", serif;
+  color: rgb(71, 24, 15);
   max-width: 50rem;
   margin: 0 auto;
   padding: 20px;
@@ -805,18 +844,33 @@ tbody tr {
 }
 
 tbody tr:nth-child(even) {
-  background-color: #fff3f0;
+  background-color: #e2dcd9;
 }
 
 tbody tr:hover {
   background-color: #294379;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /* 
 tbody tr:last-child td {
   border-radius: 0 0 8px 8px;
 }*/
+.ticketsMoreInfo p {
+  color: #2f3645;
+  margin: 2rem;
+  font-family: "DM Sans", serif;
+  font-size: 1.5rem;
+}
+
+.linkFormRefund {
+  color: rgb(194, 100, 100);
+}
+
+.linkFormRefund:hover {
+  color: #2f3645;
+}
+
 .carousel-item {
   height: 35rem;
 }
