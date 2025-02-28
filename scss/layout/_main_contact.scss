@@ -41,7 +41,17 @@
   border: 1px solid #ccc;
   
 }
-h1{
+.h1Contact {
+    font-weight: 100;
+    color:map-get($colors,azul);
+    font-family: $spartan;
+    font-size: map-get($font-sizes, h1-1440);
+    margin: 2.3rem;
+    align-items: center;
+    justify-self: center;  /* en eje x*/
+
+  }
+  .contactInfo h1{
     font-weight: 100;
     color:map-get($colors,azul);
     font-family: $spartan;

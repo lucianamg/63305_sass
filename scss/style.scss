@@ -20,9 +20,15 @@
 @import "./components/hambmenu";
 @import "./components/navbar";
 
+@import "./layout/mediaq/media1102-1230";
+@import "./layout/mediaq/media910-1101";
+@import "./layout/mediaq/media780-909";
 @import "./layout/mediaq/mediamb";
 @import "./layout/mediaq/mediatb";
-@import "./layout/mediaq/media_other";
+
+
+
+
 /* primero partials de utilities
 vbles maps mixings
 luego base

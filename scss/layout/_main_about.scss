@@ -23,6 +23,7 @@
     color:map-get($colors,azul);
     font-family: $spartan;
     font-size: map-get($font-sizes, h1-1440);
+
   }
  
   .sectionMainDescription {
@@ -195,7 +196,7 @@
     font-family: $dmsans;
     font-weight: 300;
     font-size: map-get($font-sizes,p-1440);
-    color:map-get($colors,gris);
+    
   }
   .img3_1{
     grid-column: 1/2;

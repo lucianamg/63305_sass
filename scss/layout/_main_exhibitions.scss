@@ -46,12 +46,7 @@
   }
 
 
-.subheadingLine{
-  font-weight: 100;
-  color:map-get($colors,azul);
-  font-family: $spartan;
-  font-size: map-get($font-sizes, h1-1440);
-}
+
 
 .current1{
     display: flex;
@@ -119,6 +114,12 @@
 .subheadingLine {
     display: flex;
     align-items: center;
+  }
+  .subheadingLine{
+    font-weight: 100;
+    color:map-get($colors,azul);
+    font-family: $spartan;
+    font-size: map-get($font-sizes, h1-1440);
   }
   
   .subheadingLine span {
