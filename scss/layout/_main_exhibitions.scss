@@ -26,11 +26,15 @@
     gap: 2rem;
     margin: 2rem 0;
   }
+    /* VER ajustaR el botón OJO ESTE DUPLICA INFO */
+    .exhibition-layout {
+        align-self: flex-start;
+        margin-top: 1rem;
+      }
   
   .exhibition-layout .image-container {
     flex-shrink: 0;
   }
-  
   /* El contenedor de INFO ocupa el resto */
   .exhibition-layout .info-container {
     flex: 1;
@@ -39,11 +43,7 @@
     justify-content: center;
   }
   
-  /* VER ajustaR el botón  */
-  .exhibition-layout  {
-    align-self: flex-start;
-    margin-top: 1rem;
-  }
+
 
 .current1{
     display: flex;

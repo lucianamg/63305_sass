@@ -1,7 +1,14 @@
 
 
 @media (min-width: 780px) AND (max-width: 909px) {
-                    
+              
+/*header*/
+  .logo a{
+    font-size: 2.3rem;
+  }
+  .ul-nav li a{
+    font-size: 1.5rem;
+  }
   /*exhibitions*/
   
   .current1{
@@ -12,7 +19,7 @@
   }
   .info_container {
     margin: 2px;
-}
+  }
 
   .current2{
     margin: 1rem;

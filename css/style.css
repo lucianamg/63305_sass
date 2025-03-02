@@ -465,6 +465,12 @@ header {
   margin: 2rem 0;
 }
 
+/* VER ajustaR el botón OJO ESTE DUPLICA INFO */
+.exhibition-layout {
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
 .exhibition-layout .image-container {
   flex-shrink: 0;
 }
@@ -475,12 +481,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-/* VER ajustaR el botón  */
-.exhibition-layout {
-  align-self: flex-start;
-  margin-top: 1rem;
 }
 
 .current1 {
@@ -923,7 +923,7 @@ tbody tr:last-child td {
 
 /* botón hamburguesa */
 .hamburger-menu {
-  display: none; /* Oculto en vista web */
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   width: 30px;
@@ -938,16 +938,6 @@ tbody tr:last-child td {
   border-radius: 3px;
 }
 
-/* Mobile: ver si mostrar el botón y ocultar el menú por defecto */
-@media (max-width: 500px) {
-  .hamburger-menu {
-    display: flex;
-  }
-  /* Ocultar menú por defecto */
-  .nav-menu {
-    display: none;
-  }
-}
 .logo a {
   text-decoration: none;
   padding-left: 0.1875rem;
@@ -1194,6 +1184,7 @@ tbody tr:last-child td {
     font-weight: 300;
     text-align: justify;
     color: #2f3645;
+    font-size: 1.3rem;
   }
   .info_container h2 {
     font-family: "League Spartan", serif;
@@ -1376,6 +1367,13 @@ tbody tr:last-child td {
   }
 }
 @media (min-width: 780px) and (max-width: 909px) {
+  /*header*/
+  .logo a {
+    font-size: 2.3rem;
+  }
+  .ul-nav li a {
+    font-size: 1.5rem;
+  }
   /*exhibitions*/
   .current1 {
     margin: 0rem 1rem 3rem 1rem;
@@ -1603,52 +1601,216 @@ tbody tr:last-child td {
     width: 25%;
   }
 }
-/* Media query  máximo de 744px */
-@media (max-width: 779px) {
+/* Media query  entre 500 y 779px */
+@media (min-width: 501px) and (max-width: 779px) {
   .header {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: center; /* este mueve el menu h hacia abajo o arriba*/
+    justify-content: space-between;
+    /* aca no hacen nada
+    justify-items: left;
+    align-content: left;*/
     margin: 0.5rem;
+    height: fit-content;
+  }
+  .damnHeader {
+    flex-direction: row;
+    align-items: center; /* este mueve el menu h hacia abajo o arriba*/
+    justify-content: space-between;
+    margin: 0.5rem;
+    height: fit-content;
+  }
+  .damnHeader nav ul li {
+    margin: 12px;
   }
   .logo a {
     font-size: 2rem;
     margin: 0.5rem;
   }
+  .nav-menu {
+    display: none;
+  }
+  .hamburger-menu { /* esto son las tres rayitas  */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 10; /* Por encima  */
+  }
+  .hamburger-menu span {
+    background: #294379;
+    height: 3px;
+    border-radius: 3px;
+  }
+  .nav-menu.active { /* que cuando se active, mostrar el menú */
+    display: block;
+    text-align: center;
+    background-color: #ffffff; /* Retocar */
+  }
   .ul-nav {
+    display: inline-block;
+    text-align: left;
+  }
+  /*.ul-nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     margin: 1.5rem;
-  }
+  }*/
   .ul-nav li a {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   /* Main Home (index) */
   .main_home h1 {
     font-size: 1.8rem;
-    padding: 2rem;
   }
   .banner {
-    width: 90%;
-    height: auto;
+    width: 60%;
+    height: 18.75rem;
     margin: 2rem auto;
     padding: 1rem;
   }
   .popup-content {
+    position: relative;
     width: 90%;
-    height: auto;
-    padding: 1rem;
+    height: 50rem;
+    background: url("../assets/img/museumday.jpg") no-repeat center/cover; /* no-repeat center center/cover */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px hsla(60, 16%, 93%, 0.508);
+    text-align: center;
+    color: rgb(71, 24, 15);
+    font-family: "DM Sans", serif;
+    font-weight: 200;
+  }
+  .popup-content h2 {
+    font-size: 25px;
+  }
+  .popup-content p {
+    font-size: 20px;
+    background-color: rgba(223, 230, 149, 0.5294117647);
+  }
+  .close-popup-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgb(84, 20, 20);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 5%;
+    transform: translateX(-50%);
+  }
+  .close-popup-btn:hover {
+    background-color: rgb(194, 100, 100);
+  }
+  .open-popup-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgb(84, 20, 20);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 60px;
+  }
+  .open-popup-btn:hover {
+    background-color: rgb(194, 100, 100);
   }
   /* Carrusel y galerías de Exhibitions */
   .carousel-item {
-    height: 20rem;
+    height: 15rem;
   }
-  .current2 img,
-  .current3 img,
-  .articlesUpcoming article div img,
-  .PastExhibitions img {
+  .carousel-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain; /* Muestra la imagen completa sin recortar */
+    object-position: center; /* Centra la imagen dentro del contenedor */
+  }
+  .articlesCurrent {
+    margin: 0.25rem;
+  }
+  .current1 {
+    margin: 0rem;
+  }
+  .subheadingLine {
+    font-size: 2rem;
+  }
+  .current1 button {
+    margin-top: 0;
+  }
+  /*exhibitions*/
+  .info_container p {
+    font-size: 0.9rem;
+  }
+  .info_container h2 {
+    font-size: 1.2rem;
+  }
+  .info_container h6 {
+    font-size: 0.9rem;
+  }
+  .exhibition-layout {
+    gap: 0.5rem;
+  }
+  .exhibition-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .current2 {
+    margin: 3.5rem 0.25rem 2rem 0.25rem;
+    /* top right bottom left*/
+  }
+  .info_container button {
+    align-self: center;
+    align-items: center;
+    align-content: center;
+  }
+  .getTicketsButton {
+    align-self: center;
+  }
+  .current3 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 0.25;
+    margin-right: 0.25;
+  }
+  .current4 {
+    margin: 0.25rem;
+  }
+  .current5 {
+    margin: 0.25rem;
+  }
+  .current2 img {
+    width: 15rem;
+  }
+  .current3 img {
+    width: 15rem;
+  }
+  .current4 img {
+    width: 15rem;
+  }
+  .current5 img {
+    width: 15rem;
+  }
+  .articlesUpcoming article div img {
+    width: 15rem;
+  }
+  .PastExhibitions img {
+    width: 15rem;
+  }
+  .past1 img {
+    width: 15rem;
+  }
+  .past2 img {
+    width: 15rem;
+  }
+  .past3 img {
+    width: 15rem;
   }
   /* contacto*/
   .h1Contact {
@@ -1684,13 +1846,15 @@ tbody tr:last-child td {
     justify-content: center;
   }*/
   .linkHome {
-    width: 15%;
+    width: 20%;
     font-size: 1.2rem; /* ajustar*/
   }
   .footerContainer p {
-    width: 60%;
+    width: 45%;
+    font-size: 1.1rem;
+    text-align: right;
+    margin-right: 5px;
   }
-  /* footer 2*/
   .logoFooter {
     width: 49px;
   }
@@ -1699,11 +1863,36 @@ tbody tr:last-child td {
     margin: 10px;
   }
   .ul_SocialMedia {
-    width: 25%;
+    width: 35%;
+  }
+}
+/* Mobile: ver si mostrar el botón y ocultar el menú por defecto */
+@media (min-width: 321px) and (max-width: 500px) {
+  .hamburger-menu {
+    display: flex;
+  }
+  /* Ocultar menú por defecto */
+  .nav-menu {
+    display: none;
+  }
+  .nav-menu.active { /* que cuando se active, mostrar el menú */
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #fff; /* Retocar */
+  }
+  /* lista de navegación */
+  .ul-nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  .ul-nav li {
+    padding: 0.5rem 0;
   }
 }
 /* Media  320px */
-@media (max-width: 320px) {
+@media (min-width: 300px) and (max-width: 320px) {
   /* Header */
   .header {
     flex-direction: column;
@@ -1713,6 +1902,27 @@ tbody tr:last-child td {
     font-size: 1.8rem;
     padding: 0.5rem;
   }
+  .hamburger-menu {
+    display: flex;
+  }
+  /* Ocultar menú por defecto */
+  .nav-menu {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex; /* Oculto en vista web */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 10; /* Por encima  */
+  }
+  .hamburger-menu span {
+    background: #294379;
+    height: 3px;
+    border-radius: 3px;
+  }
   .ul-nav {
     flex-direction: column;
     align-items: center;
@@ -1720,7 +1930,7 @@ tbody tr:last-child td {
     margin: 0.5rem 0;
   }
   .ul-nav li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   /* Main Home */
   .main_home h1 {
@@ -1763,48 +1973,6 @@ tbody tr:last-child td {
   }
   .ul_SocialMedia a img {
     width: 40%;
-  }
-}
-/* botón hamburguesa */
-.hamburger-menu {
-  display: none; /* Oculto en vista web */
-  flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 25px;
-  cursor: pointer;
-  z-index: 10; /* Por encima  */
-}
-
-.hamburger-menu span {
-  background: #294379;
-  height: 3px;
-  border-radius: 3px;
-}
-
-/* Mobile: ver si mostrar el botón y ocultar el menú por defecto */
-@media (max-width: 500px) {
-  .hamburger-menu {
-    display: flex;
-  }
-  /* Ocultar menú por defecto */
-  .nav-menu {
-    display: none;
-  }
-  .nav-menu.active { /* que cuando se active, mostrar el menú */
-    display: block;
-    width: 100%;
-    text-align: center;
-    background-color: #fff; /* Retocar */
-  }
-  /* lista de navegación */
-  .ul-nav {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 0;
-  }
-  .ul-nav li {
-    padding: 0.5rem 0;
   }
 }
 /* primero partials de utilities

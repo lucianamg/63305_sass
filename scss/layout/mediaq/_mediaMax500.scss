@@ -1,0 +1,29 @@
+/* Mobile: ver si mostrar el botón y ocultar el menú por defecto */
+@media (min-width: 321px) AND (max-width: 500px) {
+    .hamburger-menu {
+      display: flex;
+    }
+    
+    /* Ocultar menú por defecto */
+    .nav-menu {
+        display: none;
+    }
+    
+    .nav-menu.active { /* que cuando se active, mostrar el menú */
+      display: block;
+      width: 100%;
+      text-align: center;
+      background-color: #fff; /* Retocar */
+    }
+    
+    /* lista de navegación */
+    .ul-nav {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+    
+    .ul-nav li {
+      padding: 0.5rem 0;
+    }
+  }

@@ -1,6 +1,6 @@
  /* botón hamburguesa */
  .hamburger-menu {
-    display: none; /* Oculto en vista web */
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
@@ -15,14 +15,4 @@
     border-radius: 3px;
   }
   
-  /* Mobile: ver si mostrar el botón y ocultar el menú por defecto */
-  @media (max-width: 500px) {
-    .hamburger-menu {
-      display: flex;
-    }
-    
-    /* Ocultar menú por defecto */
-    .nav-menu {
-      display: none;
-    }
-  }
+  
