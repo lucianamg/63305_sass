@@ -186,9 +186,7 @@
     grid-row: 15/18;
   }
   .paragraph3 p{
-
     font-size: map-get($font-sizes,p-1230);
-    
   }
   .img3_1{
     grid-column: 1/2;
@@ -206,5 +204,17 @@
 
   }/* fin about */
    
+/* footer */
+.logoFooter{
+    width: 58px;
+    
+  }
+  .ul_SocialMedia li a img{
+    width: 22px;
+    margin: 10px;
+  }
+  .ul_SocialMedia{
+    width: 17%;
+  }  
 }
 

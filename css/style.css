@@ -54,40 +54,46 @@ ul {
 
 /*------------------------footer */
 .footerContainer {
+  width: 100%;
   border-top: 1px solid #ebebeb;
   display: flex;
   flex-direction: row;
-  font-size: 1.5625rem;
+  font-size: 1.5rem;
   font-family: "League Spartan", serif;
   font-weight: 100;
   align-items: center;
   background-color: rgb(255, 255, 255);
 }
 
-.footerContainer a {
+.linkHome {
   width: 10%;
-  padding-top: 2px;
+  margin-top: 0px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #294379;
+  font-family: "League Spartan", serif;
 }
 
-.footerContainer a img {
-  width: 40%;
+.logoFooter {
+  width: 60px;
 }
 
 .footerContainer p {
-  width: 70%;
+  width: 73%;
   padding-top: 2px;
   text-align: right;
   margin-right: 20px;
 }
 
 .ul_SocialMedia a img {
-  width: 35%;
+  width: 50%;
 }
 
 .ul_SocialMedia {
   padding-top: 2px;
-  width: 15%;
+  width: 17%;
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -483,37 +489,13 @@ header {
 
 .articlesCurrent {
   margin: 2.25rem;
-  /* 
-    font-family: $dmsans;
-    font-family: $spartan;
-  $font-sizes:(
-   h1-320: 0.7rem,
-    h1-500: 1rem,
-    h1-700: 1.2rem,
-    h1-910: 1.8rem,
-    h1-1230: 2rem,
-    h1-1440: 2.5rem,
-
-
-    p-small: 1rem,
-    p-medium: 1.4rem,
-    p-large: 1.875rem,
-    h1-small: 1rem,
-    h1-medium: 1.4rem,
-    h1-large: 1.875rem,
-    h2-small: 1rem,
-    h2-medium: 1.4rem,
-    h2-large: 1.875rem,
-    h6-small: 1.25rem,
-    h6-medium: 1.25rem,
-    h6-large: 1.875rem,
-
-    nav-small: 1.25rem,
-    nav-medium: 1.25rem,
-    nav-large: 2.5rem
-    */
 }
 
+/* 
+font-family: $dmsans;
+font-family: $spartan;
+
+*/
 .info_container {
   margin: 10px;
 }
@@ -679,7 +661,7 @@ header {
 }
 
 .banner {
-  width: 70%;
+  width: 50%;
   height: 300px; /* Altura del banner */
   background-image: url(../assets/img/museumday.jpg);
   display: flex;
@@ -1147,6 +1129,17 @@ tbody tr:last-child td {
     grid-row: 17/18;
   }
   /* fin about */
+  /* footer */
+  .logoFooter {
+    width: 60px;
+  }
+  .ul_SocialMedia li a img {
+    width: 22px;
+    margin: 10px;
+  }
+  .ul_SocialMedia {
+    width: 17%;
+  }
 }
 /*
 @media (min-width: 700px) AND (max-width: 799px) {
@@ -1197,13 +1190,12 @@ tbody tr:last-child td {
     font-weight: 300;
     text-align: justify;
     color: #2f3645;
-    font-size: 1.2rem;
   }
   .info_container h2 {
     font-family: "League Spartan", serif;
     font-weight: 100;
     color: black;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
   .info_container h6 {
     font-family: "DM Sans", serif;
@@ -1367,35 +1359,86 @@ tbody tr:last-child td {
     grid-column: 2/3;
     grid-row: 17/18;
   } /* fin about */
+  /* footer */
+  .logoFooter {
+    width: 58px;
+  }
+  .ul_SocialMedia li a img {
+    width: 22px;
+    margin: 10px;
+  }
+  .ul_SocialMedia {
+    width: 17%;
+  }
 }
 @media (min-width: 780px) and (max-width: 909px) {
-  /*exhibitions achicar letra e img y ver padding en carrousel*/
+  /*exhibitions*/
+  .current1 {
+    margin: 0rem 1rem 3rem 1rem;
+  }
+  .articlesCurrent {
+    margin: 0.25rem;
+  }
+  .info_container {
+    margin: 2px;
+  }
+  .current2 {
+    margin: 1rem;
+  }
+  .current3 {
+    margin: 1rem;
+  }
+  .current4 {
+    margin: 1rem;
+  }
+  .current5 {
+    margin: 1rem;
+  }
   .current2 img {
-    width: 23rem;
+    width: 22rem;
   }
   .current3 img {
-    width: 23rem;
+    width: 22rem;
   }
   .current4 img {
-    width: 23rem;
+    width: 22rem;
   }
   .current5 img {
-    width: 20rem;
+    width: 22rem;
   }
   .articlesUpcoming article div img {
-    width: 25rem;
+    width: 22rem;
   }
-  .PastExhibitions img {
-    width: 25rem;
+  .articlesUpcoming {
+    margin: 0.25rem;
+  }
+  .articlesUpcoming article {
+    margin: 0rem;
+    margin: 1rem 0rem 2rem 0rem; /* top right bottom left*/
+  }
+  .articlesPast {
+    margin: 0.25rem;
   }
   .past1 img {
-    width: 25rem;
+    width: 22rem;
+  }
+  .exhibition-layout {
+    margin: 1rem 0rem 2rem 0rem; /* top right bottom left*/
   }
   .past2 img {
-    width: 25rem;
+    width: 22rem;
   }
   .past3 img {
-    width: 25rem;
+    width: 22rem;
+  }
+  .info_container p {
+    font-size: 1.25rem;
+  }
+  .info_container h2 {
+    font-size: 1.8rem;
+  }
+  .info_container h6 {
+    font-size: 1.1rem;
   }
   /* about*/
   .gridContainer {
@@ -1420,7 +1463,7 @@ tbody tr:last-child td {
     grid-row: 2/3;
   }
   .sectionMainDescription p {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     color: #2f3645;
   }
   .line1 {
@@ -1440,10 +1483,9 @@ tbody tr:last-child td {
   .paragraph1 {
     grid-column: 2/6;
     grid-row: 5/8;
-    font-size: 1.35rem;
   }
   .paragraph1 p {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     color: #2f3645;
   }
   .img1_1 {
@@ -1475,10 +1517,9 @@ tbody tr:last-child td {
   .paragraph2 {
     grid-column: 1/5;
     grid-row: 10/13;
-    font-size: 1.35rem;
   }
   .paragraph2 p {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     color: #2f3645;
   }
   .img2_1 {
@@ -1512,7 +1553,7 @@ tbody tr:last-child td {
     grid-row: 15/18;
   }
   .paragraph3 p {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
   .img3_1 {
     grid-column: 1/2;
@@ -1526,6 +1567,103 @@ tbody tr:last-child td {
     grid-column: 1/2;
     grid-row: 17/18;
   } /* fin about */
+  /* index */
+  .popup-content {
+    position: relative;
+    width: 75%;
+    height: 55rem;
+  }
+  /* contact */
+  .contactInfo p {
+    font-size: 1.2rem;
+  }
+  /* tickets */
+  .ticketsMoreInfo p {
+    font-size: 1.2rem;
+  }
+  .ticketsTitle p {
+    font-size: 1.2rem;
+  }
+  .priceTable {
+    max-width: 35rem;
+  }
+  /* footer */
+  .logoFooter {
+    width: 55px;
+  }
+  .ul_SocialMedia li a img {
+    width: 22px;
+    margin: 10px;
+  }
+  .ul_SocialMedia {
+    width: 17%;
+  }
+}
+/* Media query  máximo de 744px */
+@media (max-width: 779px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .logo a {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  .ul-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0.5rem 0;
+  }
+  .ul-nav li a {
+    font-size: 1.4rem;
+  }
+  /* Main Home (index) */
+  .main_home h1 {
+    font-size: 1.8rem;
+    padding: 2rem;
+  }
+  .banner {
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  .popup-content {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+  }
+  /* Carrusel y galerías de Exhibitions */
+  .carousel-item {
+    height: 20rem;
+  }
+  .current2 img,
+  .current3 img,
+  .articlesUpcoming article div img,
+  .PastExhibitions img {
+    width: 100%;
+    height: auto;
+  }
+  /* Footer columna */
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .footerContainer a,
+  .footerContainer p,
+  .ul_SocialMedia {
+    width: 100%;
+  }
+  .footerContainer a img {
+    width: 60%;
+  }
+  .ul_SocialMedia {
+    justify-content: center;
+  }
 }
 /* Media  320px */
 @media (max-width: 320px) {
@@ -1630,72 +1768,6 @@ tbody tr:last-child td {
   }
   .ul-nav li {
     padding: 0.5rem 0;
-  }
-}
-/* Media query  máximo de 744px */
-@media (max-width: 744px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem;
-  }
-  .logo a {
-    font-size: 2rem;
-    padding: 0.5rem;
-  }
-  .ul-nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin: 0.5rem 0;
-  }
-  .ul-nav li a {
-    font-size: 1.4rem;
-  }
-  /* Main Home (index) */
-  .main_home h1 {
-    font-size: 1.8rem;
-    padding: 2rem;
-  }
-  .banner {
-    width: 90%;
-    height: auto;
-    margin: 2rem auto;
-    padding: 1rem;
-  }
-  .popup-content {
-    width: 90%;
-    height: auto;
-    padding: 1rem;
-  }
-  /* Carrusel y galerías de Exhibitions */
-  .carousel-item {
-    height: 20rem;
-  }
-  .current2 img,
-  .current3 img,
-  .articlesUpcoming article div img,
-  .PastExhibitions img {
-    width: 100%;
-    height: auto;
-  }
-  /* Footer columna */
-  .footerContainer {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-  }
-  .footerContainer a,
-  .footerContainer p,
-  .ul_SocialMedia {
-    width: 100%;
-  }
-  .footerContainer a img {
-    width: 60%;
-  }
-  .ul_SocialMedia {
-    justify-content: center;
   }
 }
 /* primero partials de utilities
