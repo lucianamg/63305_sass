@@ -431,6 +431,10 @@ header {
   margin: 2.3rem;
 }
 
+.contactMap {
+  margin: 2.3rem;
+}
+
 .exhibitionsNav {
   display: flex;
   flex-direction: row;
@@ -966,7 +970,6 @@ tbody tr:last-child td {
 .ul-nav li a {
   text-decoration: none;
   font-family: "League Spartan", serif;
-  font-weight: 120;
   font-size: 1.6rem;
 }
 
@@ -977,6 +980,7 @@ tbody tr:last-child td {
 
 .inactive {
   color: #5e5e5f;
+  font-weight: 120;
 }
 
 @media (min-width: 1102px) and (max-width: 1230px) {
@@ -1135,10 +1139,10 @@ tbody tr:last-child td {
   }
   .ul_SocialMedia li a img {
     width: 22px;
-    margin: 10px;
+    margin: 7px;
   }
   .ul_SocialMedia {
-    width: 17%;
+    width: 20%;
   }
 }
 /*
@@ -1368,7 +1372,7 @@ tbody tr:last-child td {
     margin: 10px;
   }
   .ul_SocialMedia {
-    width: 17%;
+    width: 19%;
   }
 }
 @media (min-width: 780px) and (max-width: 909px) {
@@ -1596,7 +1600,7 @@ tbody tr:last-child td {
     margin: 10px;
   }
   .ul_SocialMedia {
-    width: 17%;
+    width: 25%;
   }
 }
 /* Media query  máximo de 744px */
@@ -1604,17 +1608,17 @@ tbody tr:last-child td {
   .header {
     flex-direction: column;
     align-items: center;
-    padding: 0.5rem;
+    margin: 0.5rem;
   }
   .logo a {
     font-size: 2rem;
-    padding: 0.5rem;
+    margin: 0.5rem;
   }
   .ul-nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    margin: 0.5rem 0;
+    margin: 1.5rem;
   }
   .ul-nav li a {
     font-size: 1.4rem;
@@ -1646,7 +1650,22 @@ tbody tr:last-child td {
     width: 100%;
     height: auto;
   }
-  /* Footer columna */
+  /* contacto*/
+  .h1Contact {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+  }
+  .contactInfo h1 {
+    font-size: 1.8rem;
+  }
+  .contactInfo p {
+    font-size: 1.2rem;
+  }
+  .contactFormContent {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  /* Footer columna esto hay que modificar
   .footerContainer {
     flex-direction: column;
     align-items: center;
@@ -1663,6 +1682,24 @@ tbody tr:last-child td {
   }
   .ul_SocialMedia {
     justify-content: center;
+  }*/
+  .linkHome {
+    width: 15%;
+    font-size: 1.2rem; /* ajustar*/
+  }
+  .footerContainer p {
+    width: 60%;
+  }
+  /* footer 2*/
+  .logoFooter {
+    width: 49px;
+  }
+  .ul_SocialMedia li a img {
+    width: 20px;
+    margin: 10px;
+  }
+  .ul_SocialMedia {
+    width: 25%;
   }
 }
 /* Media  320px */

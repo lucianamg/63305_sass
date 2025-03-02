@@ -42,7 +42,7 @@ $colors:(
 );
 
 .main_home h1{
-    font-family: "DM Sans", serif;
+    font-family: $dmsans;
     font-weight: 300;
     font-size: 2rem;
     padding: 3rem;

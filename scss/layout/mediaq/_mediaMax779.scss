@@ -1,0 +1,105 @@
+/* Media query  máximo de 744px */
+@media (max-width: 779px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+  }
+  .logo a {
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+  .ul-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem;
+  }
+  .ul-nav li a {
+    font-size: 1.4rem;
+  }
+
+
+  /* Main Home (index) */
+  .main_home h1 {
+    font-size: 1.8rem;
+    padding: 2rem;
+  }
+  .banner {
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  .popup-content {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  /* Carrusel y galerías de Exhibitions */
+  .carousel-item {
+    height: 20rem;
+  }
+  .current2 img,
+  .current3 img,
+  .articlesUpcoming article div img,
+  .PastExhibitions img {
+    width: 100%;
+    height: auto;
+  }
+/* contacto*/
+  .h1Contact{
+    margin-top: 4rem;
+    font-size: 1.8rem;
+  }
+  .contactInfo h1{
+    font-size: 1.8rem;
+  }
+  .contactInfo p{
+    font-size: 1.2rem;
+  }
+  .contactFormContent{
+  font-size: 20px;
+  font-weight: 200;
+  }
+  /* Footer columna esto hay que modificar
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .footerContainer a,
+  .footerContainer p,
+  .ul_SocialMedia {
+    width: 100%;
+  }
+  .footerContainer a img {
+    width: 60%;
+  }
+  .ul_SocialMedia {
+    justify-content: center;
+  }*/
+
+  .linkHome{
+    width: 15%;
+    font-size: map-get($font-sizes, p-780); /* ajustar*/
+  }
+  .footerContainer p{
+    width: 60%;
+
+  }
+      /* footer 2*/
+  .logoFooter{
+    width: 49px;
+    
+  }
+  .ul_SocialMedia li a img{
+    width: 20px;
+    margin: 10px;
+  }
+  .ul_SocialMedia{
+    width: 25%;
+} 
+}

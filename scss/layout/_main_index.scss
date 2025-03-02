@@ -43,7 +43,7 @@
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    font-family: "DM Sans", serif;
+    font-family: $dmsans;
     font-size: 1.5rem;
     z-index: 1;
     position: relative;
@@ -75,7 +75,7 @@
     box-shadow: 0 4px 8px hsla(60, 16%, 93%, 0.508);
     text-align: center;
     color: rgb(71, 24, 15);
-    font-family: "DM Sans", serif;
+    font-family: $dmsans;
     font-weight: 200;
 }
 .popup-content h2{
