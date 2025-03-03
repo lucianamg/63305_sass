@@ -146,6 +146,12 @@
           object-fit: contain; /* Muestra la imagen completa sin recortar */
           object-position: center; /* Centra la imagen dentro del contenedor */
   }
+  .info_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
   .articlesCurrent {
     margin: 0.25rem;
   }
@@ -177,59 +183,64 @@
     
   }
   .current2{
-    margin: 3.5rem 0.25rem 2rem 0.25rem;
+    margin: 3.5rem 0.25rem 2.5rem 0.25rem;
 /* top right bottom left*/
   }
-  .info_container button{
-    align-self: center;
-    align-items: center;
-    align-content: center;
-  }
-  .getTicketsButton{
-    align-self: center;
-  }
   .current3{
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    margin-left: 0.25;
-    margin-right: 0.25;
+    margin: 3.5rem 0.25rem 2rem 0.25rem;
   }
   .current4{
-    margin:0.25rem;
+    margin: 3.5rem 0.25rem 2rem 0.25rem;
   }
   .current5{
-    margin:0.25rem;
+    margin: 3.5rem 0.25rem 2rem 0.25rem;
   }
   .current2 img{
-    width: 15rem;
+    width: 22rem;
   }
   .current3 img{
-    width: 15rem;
+    width: 22rem;
   }
   .current4 img{
-    width: 15rem;
+    width: 22rem;
   }
   .current5 img{
-    width: 15rem;
+    width: 22rem;
   }
+  .articlesUpcoming {
+    margin: 0.25rem;
+  }
+  .articlesUpcoming article {
+  margin: 0rem;
+}
   .articlesUpcoming article div img{
-    width: 15rem;
+    width: 22rem;
+  }
+  
+  .articlesPast {
+    margin: 0.25rem;
   }
   .PastExhibitions img{
-    width: 15rem;
+    width: 22rem;
   }
   .past1 img{
-    width: 15rem;
+    width: 22rem;
   }
   .past2 img{
-    width: 15rem;
+    width: 22rem;
   }
   .past3 img{
-    width: 15rem;
+    width: 22rem;
   }
-
-
-
+  .past1{
+    margin: 3.5rem 0.25rem 2rem 0.25rem;
+  }
+  .past2{
+    margin: 3.5rem 0.25rem 2rem 0.25rem;
+  }
+  .past3{
+    margin: 3.5rem 0.25rem 2rem 0.25rem;
+  }
 /* contacto*/
   .h1Contact{
     margin-top: 4rem;
@@ -269,7 +280,7 @@
     font-size: map-get($font-sizes, p-780); /* ajustar*/
   }
   .footerContainer p{
-    width: 45%;
+    width: 40%;
     font-size: map-get($font-sizes, p-500);
     text-align: right;
     margin-right: 5px;
@@ -282,6 +293,9 @@
     margin: 10px;
   }
   .ul_SocialMedia{
-    width: 35%;
+    width: 40%;
 } 
+ul {
+  padding-left: 1rem;
+}
 }
