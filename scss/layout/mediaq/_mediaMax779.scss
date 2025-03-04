@@ -389,32 +389,64 @@
 /* tickets 
   font-size: map-get($font-sizes, h1-910);*/
 
-
-
-
-
-
-  
-
-
-
-
-
+  /* tickets */
+  .ticketsMoreInfo p{
+    font-size: map-get($font-sizes,p-780);
+  }
+  .ticketInfo h2{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: map-get($font-sizes,h2-780);
+  }
+  .ticketsTitle h1{
+    font-size: map-get($font-sizes, h1-910);
+  }
+  .ticketsTitle p{
+    font-size: map-get($font-sizes, p-780);
+    text-align: center;
+    margin: 1rem;
+  }
+  .priceTable{
+    max-width: 24rem;
+    font-size: map-get($font-sizes, p-780);
+  }
+  .BuyTicketsForm {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #294379;
+    font-family: $spartan;
+    margin: 4rem 0rem 4rem 0.25rem;
+}
+.BuyTicketsForm h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  color: #294379;
+  font-family: $spartan;
+}
 /* contacto*/
+
   .h1Contact{
-    margin-top: 4rem;
     font-size: 1.8rem;
   }
   .contactInfo h1{
     font-size: 1.8rem;
   }
   .contactInfo p{
-    font-size: 1.2rem;
+    font-size: map-get($font-sizes, p-780);
   }
   .contactFormContent{
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 200;
   }
+
+  .contactInfo div {
+    margin: 1rem;
+  }
+  .contactMap {
+    margin: 1rem;
+  }
+
   /* Footer columna esto hay que modificar
   .footerContainer {
     flex-direction: column;
@@ -433,6 +465,9 @@
   .ul_SocialMedia {
     justify-content: center;
   }*/
+  /* footer */
+
+
 
   .linkHome{
     width: 20%;
