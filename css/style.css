@@ -1825,6 +1825,147 @@ tbody tr:last-child td {
   .past3 {
     margin: 3.5rem 0.25rem 2rem 0.25rem;
   }
+  /* about*/
+  /* about  */
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    grid-auto-rows: minmax(30px, auto);
+  }
+  .gridContainer img {
+    width: 22rem;
+  }
+  .sectionMainTitle {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+  .sectionMainTitle h1 {
+    font-size: 1.8rem;
+  }
+  .sectionMainDescription {
+    grid-column: 1/6;
+    grid-row: 2/3;
+  }
+  .sectionMainDescription p {
+    font-size: 1.2rem;
+    color: #2f3645;
+  }
+  .line1 {
+    grid-column: 1/6;
+    grid-row: 3/4;
+  }
+  .line1 {
+    content: "";
+    flex: 1;
+    border-top: 1px solid #eee;
+    margin-left: 8px;
+  }
+  .title1 {
+    grid-column: 1/6;
+    grid-row: 4/5;
+  }
+  .title1 h2 {
+    font-size: 1.2rem;
+  }
+  .paragraph1 {
+    grid-column: 1/6;
+    grid-row: 5/8;
+    font-size: 1.35rem;
+  }
+  .paragraph1 p {
+    font-size: 1.2rem;
+    color: #2f3645;
+  }
+  .img1_1 {
+    grid-column: 1/6;
+    grid-row: 8/9;
+  }
+  .img1_2 {
+    grid-column: 1/6;
+    grid-row: 9/10;
+  }
+  .img1_3 {
+    grid-column: 1/6;
+    grid-row: 10/11;
+  }
+  .line2 {
+    grid-column: 1/6;
+    grid-row: 11/12;
+  }
+  .line2 {
+    content: "";
+    flex: 1;
+    border-top: 1px solid #eee;
+    margin-left: 8px;
+  }
+  .title2 {
+    grid-column: 1/6;
+    grid-row: 12/13;
+  }
+  .title2 h2 {
+    font-size: 1.2rem;
+  }
+  .paragraph2 {
+    grid-column: 1/6;
+    grid-row: 13/16;
+    font-size: 1.35rem;
+  }
+  .paragraph2 p {
+    font-size: 1.2rem;
+    color: #2f3645;
+  }
+  .img2_1 {
+    grid-column: 1/6;
+    grid-row: 16/17;
+  }
+  .img2_2 {
+    grid-column: 1/6;
+    grid-row: 17/18;
+  }
+  .img2_3 {
+    grid-column: 1/6;
+    grid-row: 18/19;
+  }
+  .line3 {
+    grid-column: 1/6;
+    grid-row: 19/20;
+  }
+  .line3 {
+    content: "";
+    flex: 1;
+    border-top: 1px solid #eee;
+    margin-left: 8px;
+  }
+  .title3 {
+    grid-column: 1/6;
+    grid-row: 20/21;
+  }
+  .title3 h2 {
+    font-size: 1.2rem;
+  }
+  .paragraph3 {
+    grid-column: 1/6;
+    grid-row: 21/22;
+  }
+  .paragraph3 p {
+    font-size: 1.2rem;
+  }
+  .img3_1 {
+    grid-column: 1/6;
+    grid-row: 22/23;
+  }
+  .img3_2 {
+    grid-column: 1/6;
+    grid-row: 23/24;
+  }
+  .img3_3 {
+    grid-column: 1/6;
+    grid-row: 24/25;
+  } /* fin about */
+  /* tickets 
+    font-size: map-get($font-sizes, h1-910);*/
   /* contacto*/
   .h1Contact {
     margin-top: 4rem;
