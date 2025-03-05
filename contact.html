@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="contactMap">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2833.418806596605!2d-64.29698489776096!3d-31.142017080449442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1740509682502!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+              <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2833.418806596605!2d-64.29698489776096!3d-31.142017080449442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1740509682502!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
             </div>
         </section>
 
@@ -114,9 +114,11 @@
       </ul>
     </footer>
 <script> <!-- esto es para el menu hamburgues-->
-    function toggleMenu() {
+function toggleMenu() {
       const navMenu = document.querySelector('.nav-menu');
+      const header = document.querySelector('.header');
       navMenu.classList.toggle('active');
+      header.classList.toggle('menu-active');
     }
   </script>
 

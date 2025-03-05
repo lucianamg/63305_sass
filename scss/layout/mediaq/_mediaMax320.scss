@@ -1,53 +1,84 @@
  /* Media  320px */
- @media (min-width: 300px) AND (max-width: 320px) {
+@media (max-width: 320px) {
     /* Header */
-    .header {
-      flex-direction: column;
-      padding: 0.5rem;
-    }
-    .logo a {
-      font-size: 1.8rem;
-      padding: 0.5rem;
-    }
-
-    .hamburger-menu {
-      display: flex;
-    }
-    
-    /* Ocultar menú por defecto */
-    .nav-menu {
-        display: none;
-    }
-.hamburger-menu {
-    display: flex; /* Oculto en vista web */
+  .header {
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
+    align-items: flex-start;
+    height: fit-content;
+    margin: 0.5rem;
+    gap: 0.5rem;
+    position: relative;
+    border-bottom: 1px solid #ebebeb;
+    transition: padding-bottom 0.3s;
+  }
+  .damnHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: fit-content;
+    margin: 0.5rem;
+    gap: 0.5rem;
+    position: relative;
+    border-bottom: 1px solid #ebebeb;
+    transition: padding-bottom 0.3s;
+  }
+  .logo a {
+    font-size: 1.5rem;
+  }
+  .hamburger-menu {
+    display: flex;
+    margin-bottom: 0.5rem;
+  }
+  .nav-menu { 
+      display: none;
+  }
+  .hamburger-menu {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 25px;
+    height: 20px;
     cursor: pointer;
     z-index: 10; /* Por encima  */
   }
-  
   .hamburger-menu span {
     background: #294379;
     height: 3px;
     border-radius: 3px;
   }
+  .nav-menu.active { 
+    display: block;
+    text-align: center;
+    background-color: #ffffff;
+    position: absolute;
+    top: 40px; 
+    left: 0;
+    width: 100%;
+  }
+  .ul-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    /*gap: 0.2rem;*/
+    margin-bottom: 0;
+  }
+  .ul-nav li a {
+    font-size: 1rem;
+  }
+  .header.menu-active {
+    padding-bottom: 4.6875rem; /* con esto expando la linea */
+  }
 
 
-    .ul-nav {
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5rem;
-      margin: 0.5rem 0;
-    }
-    .ul-nav li a {
-      font-size: 1rem;
-    }
-  
+
+
+
+
+
+
     /* Main Home */
     .main_home h1 {
-      font-size: 1.5rem;
+      font-size: 1rem;
       padding: 1rem;
     }
     .banner {
@@ -90,5 +121,31 @@
       width: 40%;
     }
 
+/* contacto*/
 
+.h1Contact{
+  font-size: map-get($font-sizes, h1-320);
+}
+.contactInfo h1{
+  font-size: map-get($font-sizes, h1-320);
+}
+.contactInfo p{
+  font-size: map-get($font-sizes, p-320);
+}
+.contactFormContent{
+font-size: 0.75rem;
+font-weight: 200;
+}
+
+.contactInfo div {
+  margin: 1rem;
+}
+.contactMap {
+  margin: 0.25rem;
+  
+}
+.iframe{
+width: 17.5rem;
+height: 13.125rem;
+}
 }
