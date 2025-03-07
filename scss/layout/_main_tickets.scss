@@ -47,7 +47,6 @@
     color:map-get($colors,azul);
     margin-top: 4rem;;
     margin-bottom: 1.6rem;
-
   }
 
 .priceTable{
@@ -63,7 +62,6 @@
     width: 100%;
     border-collapse: collapse; 
     border: none;
-
 }
   th, td {
     /*border: 1px solid #ccc;  Borde gris */
@@ -90,8 +88,7 @@
 
   tbody tr:hover {
     background-color: map-get($colors,azul);
-    color:  map-get($colors,blanco);
-    
+    color:  map-get($colors,blanco); 
   }
 
   /* 

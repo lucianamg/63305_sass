@@ -7,20 +7,8 @@
   .current1 button{   /* esto lo puedo sacar todo, no estaba originalmente  */
     align-self: center;
     margin-top: 1rem;
-    
   }
-  /* 
-  .getTicketsButton button{
-    background-color: map-get($colors,grisClaro);
-    padding: .3125rem;
-    border-radius: 3px;
-    border: 1px solid rgb(80, 80, 80);
-    color: map-get($colors,azul);
-    font-family: $spartan;
-    font-weight: 300;
-    text-align: center;
-}
-*/
+
  
   .getTicketsButton{
     background-color: map-get($colors,grisClaro);

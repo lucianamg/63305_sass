@@ -1,9 +1,40 @@
-.borrar{
-    font-family: $dmsans;
-      font-weight: 300;
-      color:#294379;
-      font-family: $spartan;
-      font-weight: 300;
-      font-size: 2.5rem;
+
+@mixin reset() {/* Reset  */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
+  @mixin no-decoration() { /* Quitar decorado links */
+    text-decoration: none;
+  }
+  
+  @mixin flex-center($direction: row) {/* Flex row center  */
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin horizontal-line($color: #eee, $marginLeft: 8px) { /* Línea horizontal */
+    content: "";
+    flex: 1;
+    border-top: 1px solid $color;
+    margin-left: $marginLeft;
+  }
+  @mixin spartan($size, $color, $weight: 100) {
+    font-family: $spartan;/* ver si funca con variables y maps */
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+  }
+  
+  @mixin sans($size, $color, $weight: 300) { 
+    font-family: $dmsans; /* ver si funca con variables */
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+  }
+  @mixin box-shadow($shadow: 0 2px 4px rgba(0, 0, 0, 0.1)) {
+    box-shadow: $shadow;
+  }

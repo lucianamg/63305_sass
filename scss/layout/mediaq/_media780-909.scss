@@ -219,11 +219,24 @@
   }/* fin about */
 
                 /* index */
+
+  .banner {
+    width: 70%;
+    height: 20rem;
+  }
   .popup-content {
     position: relative;
-    width: 75%;
+    width: 80%;
     height: 55rem;
   }
+  .close-popup-btn {
+    bottom: 22px;
+    right: 2%;
+  }
+
+
+
+
                 /* contact */
 
   .contactInfo p{
