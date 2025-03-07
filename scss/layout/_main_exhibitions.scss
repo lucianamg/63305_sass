@@ -72,18 +72,23 @@
     color:map-get($colors, gris);
     font-size: map-get($font-sizes, p-1440);
 }
+#h2Permanent{
+    color:map-get($colors, popupHover);
+}
 .info_container h2{
     font-family: $spartan;
     font-weight: 100;
-    color:black;
+    color:map-get($colors, azul);
     font-size: map-get($font-sizes, h2-1440);
 }
+
 .info_container h6{
     font-family: $dmsans;
     font-weight: 500;
     color:map-get($colors, azul);
     font-size: map-get($font-sizes, h6-1440);
 }
+
 .subheadingLine {
     display: flex;
     align-items: center;

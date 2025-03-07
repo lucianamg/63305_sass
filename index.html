@@ -24,7 +24,6 @@
     <title>Sitio web del Museo de Lunaria</title>
     <link rel="stylesheet" href="./css/style.css">
 
-
 </head>
 <body>
     <header class="damnHeader">
@@ -37,7 +36,7 @@
           <span></span>
         </div>
         <nav class="nav-menu">
-          <ul class="ul-nav">
+          <ul class="ul-nav second">
             <li><a class="inactive" href="./exhibitions.html">Exhibiciones</a></li>
             <li><a class="inactive" href="./about.html">Historia</a></li>
             <li><a class="inactive" href="./tickets.html">Entradas</a></li>
@@ -46,7 +45,6 @@
         </nav>
       </header>
       
-
     <main class="main_home"> 
         <h1>Te damos la Bienvenida al Museo de la ciudad de Lunaria</h1>
         <section class="main_section">
@@ -80,13 +78,31 @@
             <li><a href="http://www.x.com/123"><img src="./assets/img/x.png" alt="icono x"></a></li>
             <li><a href="http://www.instagram.com/123"><img src="./assets/img/instagram.png" alt="icono instagram"></a></li>
             <li><a href="http://wa.me/34665768760"><img src="./assets/img/whatsapp.png" alt="icono whatsapp"></a></li>
-        </ul>
+        </ul> 
+    </footer>
 
-           
+    <script>
+        function mostrarPopup() {
+            document.getElementById('popup').style.display = 'flex'; //<!-- 'block' o 'flex' -->
+        }
+
+        function cerrarPopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+    <script> <!-- esto es para el menu hamburgues-->
+    function toggleMenu() {
+      const navMenu = document.querySelector('.nav-menu');
+      const damnheader = document.querySelector('.damnHeader');
+      navMenu.classList.toggle('active');
+      damnheader.classList.toggle('active');
+    }
+    </script>
+      
+</body>
 <!-- poner body con flex asi header main y footer son flex
 poner a main una altura y luego flex grow 1 y 
 hace que el footer se vaya para abajo-->
-    </footer>
 
 <!--CODIGO DE FORMULARIO BASICO
 <form class="loginBox" action="" method="">
@@ -110,23 +126,4 @@ hace que el footer se vaya para abajo-->
     </ul>
 </form> -->
 
-<script>
-        function mostrarPopup() {
-            document.getElementById('popup').style.display = 'flex'; //<!-- 'block' o 'flex' -->
-        }
-
-        function cerrarPopup() {
-            document.getElementById('popup').style.display = 'none';
-        }
-    </script>
-    <script> <!-- esto es para el menu hamburgues-->
-    function toggleMenu() {
-      const navMenu = document.querySelector('.nav-menu');
-      const damnheader = document.querySelector('.damnHeader');
-      navMenu.classList.toggle('active');
-      damnheader.classList.toggle('menu-active');
-    }
-      </script>
-      
-</body>
 </html>

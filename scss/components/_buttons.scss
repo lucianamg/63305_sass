@@ -34,3 +34,6 @@
     align-items: center;    
     justify-content: center;
   }
+  .gtbce{
+    color: map-get($colors,popupHover);
+  }

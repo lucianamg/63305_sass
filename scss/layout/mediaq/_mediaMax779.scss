@@ -48,7 +48,6 @@
 
   .nav-menu.active { /* que cuando se active, mostrar el menú */
     display: block;
-   
     text-align: center;
     background-color: #ffffff; /* Retocar */
   }
@@ -208,9 +207,15 @@
   .articlesUpcoming {
     margin: 0.25rem;
   }
-  .articlesUpcoming article {
-  margin: 0rem;
-}
+
+  .articlesUpcoming article{
+    
+    margin: 0.5rem 0rem 2.5rem 0rem; /* top right bottom left*/
+  }
+
+
+
+
   .articlesUpcoming article div img{
     width: 22rem;
   }
@@ -368,6 +373,7 @@
   }
   .paragraph3 p{
     font-size: map-get($font-sizes,p-780);
+    color:map-get($colors,gris);
   }
   .img3_1{
     grid-column: 1/6;
